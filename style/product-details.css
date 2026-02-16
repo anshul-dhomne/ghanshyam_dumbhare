@@ -1,0 +1,273 @@
+:root {
+    --gold: #c9a24d;
+    --beige: #f5f1ea;
+    --dark: #222;
+    --grey: #666;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: var(--dark);
+}
+
+/* ================= MAIN SECTION ================= */
+.product-page {
+    max-width: 100%;
+    margin: 40px 20px;
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+/* PRODUCT IMAGE */
+/* ================= IMAGE GALLERY (NO ZOOM) ================= */
+
+.product-image-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* LEFT THUMBNAILS */
+.product-thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-thumbnails img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.product-thumbnails img.active {
+    border: 2px solid #7B1113;
+}
+
+/* BIG IMAGE */
+.product-image {
+    width: 550px;
+    height: 550px;
+}
+
+/* Big image when no thumbnails */
+.product-image.full-width {
+    width: 100%;
+}
+
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .product-image-wrapper {
+        flex-direction: column;
+    }
+
+    .product-thumbnails {
+        flex-direction: row;
+    }
+}
+
+
+/* PRODUCT INFO */
+.product-info h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 26px;
+    font-weight: 600;
+    color: #7B1113;
+}
+
+.tax-note {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* ================= PRODUCT WEIGHT ================= */
+.product-options {
+    margin: 15px 0;
+}
+
+/* PURITY AND PINCODE */
+.option-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 14px;
+}
+
+.option-left,
+.option-right {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.label {
+    font-size: 14px;
+    color: #555;
+}
+
+/* SELECT (Metal Purity & Size) BOX */
+.select-box {
+    width: 100%;
+    height: 46px;
+    padding: 10px 12px;
+    border: 1px solid #7B1113;
+    border-radius: 12px;
+    font-size: 15px;
+    background: #fff;
+}
+
+/* PINCODE CONTAINER */
+.pincode-wrapper {
+    width: 100%;
+    height: 46px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #7B1113;
+    border-radius: 12px;
+
+}
+
+/* PINCODE INPUT */
+.pincode-wrapper input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 8px;
+}
+
+/* PINCODE BUTTON */
+.pincode-wrapper button {
+    height: 100%;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #444;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+/* ================= DISPATCH ================= */
+.dispatch-line {
+    margin: 12px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ================= PRICE BREAKUP ================= */
+.price-breakup {
+    background: #f7f4ef;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.price-breakup summary {
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.price-breakup p {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+}
+
+.price-breakup .total {
+    font-weight: 600;
+}
+
+/* ================= ACTION BUTTONS ================= */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.add-cart {
+    flex: 1;
+    padding: 14px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.buy-now {
+    flex: 1;
+    padding: 14px;
+    background: #7B1113;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+/* ================= WHATSAPP ================= */
+.whatsapp-btn {
+    display: block;
+    text-align: center;
+    border: 1px solid #25D366;
+    color: #25D366;
+    padding: 12px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* ================= PRODUCT DETAILS ================= */
+.product-details {
+    margin-top: 30px;
+}
+
+.product-details h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .product-page {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .option-row {
+        grid-template-columns: 1fr;
+    }
+}
