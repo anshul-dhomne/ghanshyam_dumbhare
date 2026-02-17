@@ -175,15 +175,17 @@ const menuToggle = document.getElementById("menuToggle");
 const navbarMenu = document.getElementById("navbarMenu");
 const menuClose = document.getElementById("menuClose");
 
-// Open Menu
+// Menu Toggle
 menuToggle.addEventListener("click", function () {
   navbarMenu.classList.add("active");
+  menuToggle.style.display = "none";
 });
 
-// Close Menu
 menuClose.addEventListener("click", function () {
   navbarMenu.classList.remove("active");
+  menuToggle.style.display = "block";
 });
+
 
 // ================= DROPDOWN TOGGLE =================
 

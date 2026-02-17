@@ -104,8 +104,6 @@
     transform: translateY(0);
   }
 
-
-
   /* ===== TWO COLUMN GOLD MENU ===== */
   .dropdown-menu.two-column {
     display: grid;
@@ -139,33 +137,16 @@
   }
 
   /* MOBILE */
-  .menu-toggle {
+  /* .menu-toggle {
+    display: none;
+  } */
+
+  /* ================= DESKTOP DEFAULT toggle,arrow,and cross will hindi in desktop view ================= */
+  .menu-toggle,
+  .menu-close,
+  .mobile-arrow {
     display: none;
   }
-
-  /* CART */
-  .cart-icon {
-    position: relative;
-    display: inline-block;
-    color: #222;
-  }
-
-  .cart-count {
-    position: absolute;
-    top: -6px;
-    right: -10px;
-    background: #c0392b;
-    color: #fff;
-    font-size: 12px;
-    min-width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-  }
-
 
   /* ====== BANNER SLIDER ======= */
 
@@ -606,7 +587,6 @@
     }
 
     /* ===== FULL SCREEN MENU ===== */
-
     nav {
       position: fixed;
       top: 0;
@@ -617,9 +597,12 @@
       transform: translateX(-100%);
       transition: transform 0.35s ease;
       z-index: 10000;
-      padding: 25px 20px;
+      padding: 70px 20px 20px;
+      /* extra top space */
       overflow-y: auto;
     }
+
+
 
     nav.active {
       transform: translateX(0);
@@ -627,9 +610,18 @@
 
     /* Close Button */
     .menu-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      /* RIGHT SIDE */
       font-size: 24px;
       cursor: pointer;
-      margin-bottom: 30px;
+    }
+
+    .menu-toggle,
+    .menu-close,
+    .mobile-arrow {
+      display: block;
     }
 
     /* ===== MAIN MENU VERTICAL ===== */
@@ -673,7 +665,6 @@
 
     /* Arrow */
     .mobile-arrow {
-      display: block;
       font-size: 16px;
       color: #000;
       transition: transform 0.3s ease;
