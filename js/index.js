@@ -1,19 +1,13 @@
-// ================= MOBILE MENU + SLIDER + SCROLLER =================
-document.addEventListener("DOMContentLoaded", () => {
+// ======================================================
+// Ghanshyam Dumbhare Jewellers - Main JavaScript
+// ======================================================
 
-  // ================= MOBILE MENU =================
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('nav ul');
+document.addEventListener("DOMContentLoaded", function () {
 
-  if (menuToggle) {
-    menuToggle.addEventListener('click', () => {
-      navMenu.style.display =
-        navMenu.style.display === 'flex' ? 'none' : 'flex';
-      navMenu.style.flexDirection = 'column';
-    });
-  }
+  // ======================================================
+  // BANNER SLIDER
+  // ======================================================
 
-  // ================= BANNER SLIDER =================
   const slides = document.querySelectorAll(".slide");
   const nextBtn = document.getElementById("nextSlide");
   const prevBtn = document.getElementById("prevSlide");
@@ -48,12 +42,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (nextBtn && prevBtn) {
-      nextBtn.addEventListener("click", () => {
+      nextBtn.addEventListener("click", function () {
         nextSlide();
         resetAutoSlide();
       });
 
-      prevBtn.addEventListener("click", () => {
+      prevBtn.addEventListener("click", function () {
         prevSlide();
         resetAutoSlide();
       });
@@ -63,7 +57,11 @@ document.addEventListener("DOMContentLoaded", () => {
     startAutoSlide();
   }
 
-  // ================= PROMISE SCROLLER =================
+
+  // ======================================================
+  // PROMISE SCROLLER (DRAG + AUTO SCROLL)
+  // ======================================================
+
   const scroller = document.getElementById("scroller");
 
   if (scroller) {
@@ -71,19 +69,26 @@ document.addEventListener("DOMContentLoaded", () => {
     let isDown = false;
     let startX;
     let scrollLeft;
+    let autoScroll;
 
-    // ===== DRAG SCROLL =====
-    scroller.addEventListener("mousedown", (e) => {
+    // ===== DRAG SCROLL (MOUSE) =====
+    scroller.addEventListener("mousedown", function (e) {
       isDown = true;
       startX = e.pageX - scroller.offsetLeft;
       scrollLeft = scroller.scrollLeft;
     });
 
-    scroller.addEventListener("mouseleave", () => isDown = false);
-    scroller.addEventListener("mouseup", () => isDown = false);
+    scroller.addEventListener("mouseleave", function () {
+      isDown = false;
+    });
 
-    scroller.addEventListener("mousemove", (e) => {
+    scroller.addEventListener("mouseup", function () {
+      isDown = false;
+    });
+
+    scroller.addEventListener("mousemove", function (e) {
       if (!isDown) return;
+
       e.preventDefault();
       const x = e.pageX - scroller.offsetLeft;
       const walk = (x - startX) * 1.5;
@@ -91,27 +96,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // ===== TOUCH SUPPORT =====
-    scroller.addEventListener("touchstart", (e) => {
+    scroller.addEventListener("touchstart", function (e) {
       startX = e.touches[0].pageX;
       scrollLeft = scroller.scrollLeft;
     });
 
-    scroller.addEventListener("touchmove", (e) => {
+    scroller.addEventListener("touchmove", function (e) {
       const x = e.touches[0].pageX;
       const walk = (x - startX) * 1.5;
       scroller.scrollLeft = scrollLeft - walk;
     });
 
     // ===== AUTO SCROLL =====
-    let autoScroll;
-
     function startAutoScroll() {
-      autoScroll = setInterval(() => {
+      autoScroll = setInterval(function () {
+
         scroller.scrollLeft += 1;
 
-        // Reset when end reached
-        if (scroller.scrollLeft >=
-          scroller.scrollWidth - scroller.clientWidth) {
+        if (scroller.scrollLeft >= scroller.scrollWidth - scroller.clientWidth) {
           scroller.scrollLeft = 0;
         }
 
@@ -122,7 +124,6 @@ document.addEventListener("DOMContentLoaded", () => {
       clearInterval(autoScroll);
     }
 
-    // Pause on hover
     scroller.addEventListener("mouseenter", stopAutoScroll);
     scroller.addEventListener("mouseleave", startAutoScroll);
 
@@ -132,28 +133,89 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// ================= AUTO GROSS WEIGHT ONLY =================
+// ======================================================
+// AUTO GROSS WEIGHT FETCH (NO PRICE)
+// ======================================================
+
 fetch("data/products.json")
-  .then(res => res.json())
-  .then(data => {
+  .then(function (res) {
+    return res.json();
+  })
+  .then(function (data) {
 
     let allProducts = [];
 
-    Object.keys(data).forEach(metal => {
-      Object.keys(data[metal]).forEach(gender => {
+    Object.keys(data).forEach(function (metal) {
+      Object.keys(data[metal]).forEach(function (gender) {
         allProducts = allProducts.concat(data[metal][gender]);
       });
     });
 
-    // ===== GROSS WEIGHT ONLY =====
-    document.querySelectorAll(".gross-weight").forEach(el => {
+    document.querySelectorAll(".gross-weight").forEach(function (el) {
+
       const id = parseInt(el.dataset.productId);
-      const product = allProducts.find(p => p.id === id);
+      const product = allProducts.find(function (p) {
+        return p.id === id;
+      });
 
       if (product && product.gross_weight) {
-        el.textContent = `Gross Weight: ${product.gross_weight} g`;
+        el.textContent = "Gross Weight: " + product.gross_weight + " g";
       }
+
     });
 
   })
-  .catch(err => console.error("JSON Load Error:", err));
+  .catch(function (err) {
+    console.error("JSON Load Error:", err);
+  });
+
+// ================= FULL SCREEN MOBILE MENU =================
+
+const menuToggle = document.getElementById("menuToggle");
+const navbarMenu = document.getElementById("navbarMenu");
+const menuClose = document.getElementById("menuClose");
+
+// Open Menu
+menuToggle.addEventListener("click", function () {
+  navbarMenu.classList.add("active");
+});
+
+// Close Menu
+menuClose.addEventListener("click", function () {
+  navbarMenu.classList.remove("active");
+});
+
+// ================= DROPDOWN TOGGLE =================
+
+const dropdowns = document.querySelectorAll(".dropdown");
+
+dropdowns.forEach(function (dropdown) {
+
+  const header = dropdown.querySelector(".dropdown-header");
+  const arrow = dropdown.querySelector(".mobile-arrow");
+  const link = dropdown.querySelector("a");
+
+  // CLICK ON ARROW → OPEN DROPDOWN
+  arrow.addEventListener("click", function (e) {
+
+    e.stopPropagation();     // stop bubbling
+    e.preventDefault();      // stop link redirect
+
+    // Close other dropdowns
+    dropdowns.forEach(function (item) {
+      if (item !== dropdown) {
+        item.classList.remove("active");
+      }
+    });
+
+    // Toggle current
+    dropdown.classList.toggle("active");
+  });
+
+  // CLICK ON TEXT → OPEN PAGE
+  link.addEventListener("click", function () {
+    window.location.href = link.href;
+  });
+
+});
+
