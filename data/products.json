@@ -11,13 +11,35 @@
         "purity": "22K",
         "net_weight": 2.50,
         "gross_weight": 3.00,
-        "size": [6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+        "size": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
         "image": [
-          "assets/Product.png",
-          "assets/Product.png",
-          "assets/Product.png",
-          "assets/Product.png"
-          
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -32,8 +54,9 @@
         "gross_weight": 4.45,
         "making_percent": 13,
         "image": [
-           "assets/Product.png"
-
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -48,7 +71,9 @@
         "gross_weight": 14.45,
         "making_percent": 10,
         "image": [
-           "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -63,7 +88,9 @@
         "gross_weight": 8.45,
         "making_percent": 10,
         "image": [
-           "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -78,7 +105,9 @@
         "gross_weight": 4.45,
         "making_percent": 10,
         "image": [
-           "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -93,7 +122,9 @@
         "gross_weight": 4.45,
         "making_percent": 10,
         "image": [
-          "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -107,9 +138,15 @@
         "net_weight": 4.20,
         "gross_weight": 4.45,
         "making_percent": 10,
-        "size": [6,7,8],
+        "size": [
+          6,
+          7,
+          8
+        ],
         "image": [
-          "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -124,7 +161,9 @@
         "gross_weight": 4.45,
         "making_percent": 10,
         "image": [
-           "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -138,9 +177,15 @@
         "net_weight": 4.20,
         "gross_weight": 4.45,
         "making_percent": 10,
-        "size": [6,7,8],
+        "size": [
+          6,
+          7,
+          8
+        ],
         "image": [
-           "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -155,7 +200,9 @@
         "gross_weight": 4.45,
         "making_percent": 10,
         "image": [
-           "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       }
     ],
@@ -171,9 +218,15 @@
         "net_weight": 4.20,
         "gross_weight": 4.45,
         "making_percent": 10,
-        "size": [6,7,8],
+        "size": [
+          6,
+          7,
+          8
+        ],
         "image": [
-           "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -188,7 +241,9 @@
         "gross_weight": 4.45,
         "making_percent": 10,
         "image": [
-           "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -202,9 +257,15 @@
         "net_weight": 4.20,
         "gross_weight": 4.45,
         "making_percent": 10,
-        "length": [6,7,8],
+        "length": [
+          6,
+          7,
+          8
+        ],
         "image": [
-            "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -218,9 +279,15 @@
         "net_weight": 4.20,
         "gross_weight": 4.45,
         "making_percent": 10,
-        "size": [6,7,8],
+        "size": [
+          6,
+          7,
+          8
+        ],
         "image": [
-            "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       }
     ]
@@ -239,7 +306,9 @@
         "gross_weight": 4.45,
         "making_charge": 300,
         "image": [
-           "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -254,7 +323,9 @@
         "gross_weight": 4.45,
         "making_charge": 450,
         "image": [
-           "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -268,9 +339,15 @@
         "net_weight": 4.20,
         "gross_weight": 4.45,
         "making_charge": 450,
-        "size": [6,7,8],
+        "size": [
+          6,
+          7,
+          8
+        ],
         "image": [
-           "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -285,7 +362,9 @@
         "gross_weight": 4.45,
         "making_charge": 420,
         "image": [
-          "assets/Product.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -300,11 +379,9 @@
         "gross_weight": 4.45,
         "making_charge": 450,
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -318,13 +395,15 @@
         "net_weight": 4.20,
         "gross_weight": 4.45,
         "making_charge": 450,
-        "size": [6,7,8],
+        "size": [
+          6,
+          7,
+          8
+        ],
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       }
     ],
@@ -341,11 +420,9 @@
         "gross_weight": 4.45,
         "making_charge": 450,
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -359,13 +436,15 @@
         "net_weight": 4.20,
         "gross_weight": 4.45,
         "making_charge": 450,
-        "size": [6,7,8],
+        "size": [
+          6,
+          7,
+          8
+        ],
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -380,17 +459,15 @@
         "gross_weight": 4.45,
         "making_charge": 450,
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
         "id": 20108,
         "product_code": "GDJ-S-GK-0001",
-        "name": "925 Silver Gents Kada",  
+        "name": "925 Silver Gents Kada",
         "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
         "metal": "silver",
         "category": "gents-kada",
@@ -398,13 +475,15 @@
         "net_weight": 4.20,
         "gross_weight": 4.45,
         "making_charge": 450,
-        "size": [6,7,8],
+        "size": [
+          6,
+          7,
+          8
+        ],
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       }
     ]
@@ -423,13 +502,15 @@
         "gross_weight": 4.45,
         "diamond_weight": 0.35,
         "making_charge": 3200,
-        "size": [6,7,8],
+        "size": [
+          6,
+          7,
+          8
+        ],
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -445,11 +526,9 @@
         "diamond_weight": 0.42,
         "making_charge": 3000,
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -465,11 +544,9 @@
         "diamond_weight": 0.28,
         "making_charge": 2800,
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -485,11 +562,9 @@
         "diamond_weight": 0.55,
         "making_charge": 4500,
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -505,11 +580,9 @@
         "diamond_weight": 0.60,
         "making_charge": 5200,
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -525,11 +598,9 @@
         "diamond_weight": 0.12,
         "making_charge": 1800,
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       }
     ],
@@ -546,13 +617,15 @@
         "gross_weight": 4.45,
         "diamond_weight": 0.45,
         "making_charge": 4200,
-        "size": [6,7,8],
+        "size": [
+          6,
+          7,
+          8
+        ],
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -568,11 +641,9 @@
         "diamond_weight": 0.22,
         "making_charge": 2600,
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       },
       {
@@ -588,11 +659,9 @@
         "diamond_weight": 0.70,
         "making_charge": 6500,
         "image": [
-           "/images/Product.png",
-            "/images/bestseller collection/gold_bangles.png",
-             "/images/bestseller collection/gold_earring.png",
-              "/images/bestseller collection/Gold_mangalsutra.png",
-              "/images/bestseller collection/Gold_ring.png"
+          "assets/images/Product.png",
+          "assets/images/Product.png",
+          "assets/images/Product.png"
         ]
       }
     ]
