@@ -554,7 +554,7 @@
     /* ===== HEADER ===== */
 
     .navbar {
-      padding: 27px 40px;
+      padding: 30px 40px;
       position: relative;
     }
 
@@ -702,7 +702,7 @@
 
     /* BNNER SECTION */
     .banner-slider {
-      height: 30vh;
+      height: 40vh;
       /* Smaller height for mobile */
     }
 
