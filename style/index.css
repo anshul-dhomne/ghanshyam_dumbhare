@@ -327,14 +327,14 @@
   }
 
   /* ===== BEST COLLECTION ===== */
-  .bestseller-title {
+  .best-collection-title {
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: 36px;
     margin-bottom: 50px;
   }
 
-  .bestseller-row {
+  .best-collection-row {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -342,13 +342,13 @@
     flex-wrap: nowrap;
   }
 
-  .bestseller-item {
+  .best-collection-item {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .bestseller-item img {
+  .best-collection-item img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -356,13 +356,13 @@
     margin-bottom: 15px;
   }
 
-  .bestseller-item h4 {
+  .best-collection-item h4 {
     font-family: 'Playfair Display', serif;
     font-size: 16px;
     text-align: center;
   }
 
-  .bestseller-link {
+  .best-collection-link {
     text-decoration: none;
     color: inherit;
     display: block;
@@ -404,6 +404,11 @@
     object-fit: cover;
     border-radius: 16px;
     margin-bottom: 15px;
+  }
+  .category-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
   }
 
   .category h4 {
