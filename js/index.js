@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // ================= AUTO GROSS WEIGHT ONLY =================
-fetch("/data/products.json")
+fetch("data/products.json")
   .then(res => res.json())
   .then(data => {
 
