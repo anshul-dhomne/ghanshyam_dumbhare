@@ -41,8 +41,6 @@
     transform: translateX(-50%);
   }
 
-
-
   .brand img {
     height: 90px;
   }
@@ -52,8 +50,6 @@
     gap: 25px;
     list-style: none;
   }
-
-
 
   nav ul li a {
     text-decoration: none;
@@ -211,7 +207,6 @@
   }
 
   /* ===== PROMISES ===== */
-
   .promises-section {
     padding: 40px 0;
     text-align: center;
@@ -274,7 +269,6 @@
     transition: all 0.3s ease;
   }
 
-
   .promise-box:hover {
     transform: translateY(-6px);
     box-shadow:
@@ -331,7 +325,6 @@
     background-color: #fff;
     padding: 6px;
   }
-
 
   /* ===== BEST COLLECTION ===== */
   .bestseller-title {
@@ -602,8 +595,6 @@
       overflow-y: auto;
     }
 
-
-
     nav.active {
       transform: translateX(0);
     }
@@ -625,7 +616,6 @@
     }
 
     /* ===== MAIN MENU VERTICAL ===== */
-
     nav ul {
       list-style: none;
       padding: 0;
@@ -686,9 +676,7 @@
       margin-top: 15px;
     }
 
-
     /* Column styling */
-
     .dropdown-column {
       display: flex;
       flex-direction: column;
@@ -711,5 +699,17 @@
     .dropdown:hover .dropdown-menu {
       display: none;
     }
+
+    /* BNNER SECTION */
+    .banner-slider {
+      height: 40vh;
+      /* Smaller height for mobile */
+    }
+
+    .slider-controls button {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+
 
   }
