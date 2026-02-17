@@ -1,6 +1,7 @@
 // ================= MOBILE MENU + SLIDER + SCROLLER =================
 document.addEventListener("DOMContentLoaded", () => {
 
+  // ================= MOBILE MENU =================
   const menuToggle = document.querySelector('.menu-toggle');
   const navMenu = document.querySelector('nav ul');
 
@@ -64,11 +65,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ================= PROMISE SCROLLER =================
   const scroller = document.getElementById("scroller");
-  let isDown = false;
-  let startX;
-  let scrollLeft;
 
   if (scroller) {
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    // ===== DRAG SCROLL =====
     scroller.addEventListener("mousedown", (e) => {
       isDown = true;
       startX = e.pageX - scroller.offsetLeft;
@@ -86,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
       scroller.scrollLeft = scrollLeft - walk;
     });
 
-    // Touch Support
+    // ===== TOUCH SUPPORT =====
     scroller.addEventListener("touchstart", (e) => {
       startX = e.touches[0].pageX;
       scrollLeft = scroller.scrollLeft;
@@ -97,12 +101,38 @@ document.addEventListener("DOMContentLoaded", () => {
       const walk = (x - startX) * 1.5;
       scroller.scrollLeft = scrollLeft - walk;
     });
+
+    // ===== AUTO SCROLL =====
+    let autoScroll;
+
+    function startAutoScroll() {
+      autoScroll = setInterval(() => {
+        scroller.scrollLeft += 1;
+
+        // Reset when end reached
+        if (scroller.scrollLeft >=
+          scroller.scrollWidth - scroller.clientWidth) {
+          scroller.scrollLeft = 0;
+        }
+
+      }, 20);
+    }
+
+    function stopAutoScroll() {
+      clearInterval(autoScroll);
+    }
+
+    // Pause on hover
+    scroller.addEventListener("mouseenter", stopAutoScroll);
+    scroller.addEventListener("mouseleave", startAutoScroll);
+
+    startAutoScroll();
   }
 
 });
 
 
-// ================= AUTO DATA (PRICE + GROSS WEIGHT) =================
+// ================= AUTO GROSS WEIGHT ONLY =================
 fetch("/data/products.json")
   .then(res => res.json())
   .then(data => {
@@ -115,17 +145,7 @@ fetch("/data/products.json")
       });
     });
 
-    // ===== AUTO PRICE =====
-    document.querySelectorAll(".auto-price").forEach(el => {
-      const id = parseInt(el.dataset.productId);
-      const product = allProducts.find(p => p.id === id);
-
-      if (product && typeof calculatePrice === "function") {
-        el.textContent = `₹ ${calculatePrice(product).toLocaleString("en-IN")}`;
-      }
-    });
-
-    // ===== GROSS WEIGHT =====
+    // ===== GROSS WEIGHT ONLY =====
     document.querySelectorAll(".gross-weight").forEach(el => {
       const id = parseInt(el.dataset.productId);
       const product = allProducts.find(p => p.id === id);
