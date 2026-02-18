@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const sizeSelect = document.getElementById("sizeSelect");
 
   // ---------- LOAD PRODUCTS ----------
-  fetch("/data/products.json")
+  fetch("data/products.json")
     .then(res => res.json())
     .then(data => {
 

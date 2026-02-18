@@ -575,7 +575,7 @@
 
     /* NAVBAR */
     .navbar {
-      padding: 27px 20px;
+      padding: 40px 20px;
     }
 
     .brand {
@@ -782,7 +782,7 @@
   @media (max-width: 480px) {
 
     .brand img {
-      height: 50px;
+      height: 85px;
     }
 
     .banner-slider {
