@@ -405,6 +405,7 @@
     border-radius: 16px;
     margin-bottom: 15px;
   }
+
   .category-link {
     text-decoration: none;
     color: inherit;
@@ -716,5 +717,302 @@
       font-size: 14px;
     }
 
+    /* Best collection section */
+    /* ================= BEST COLLECTION ================= */
+
+    .best-collection-section {
+      padding: 60px 20px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .best-collection-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
+    /* DESKTOP DEFAULT */
+    .best-collection-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    /* ITEM */
+    .best-collection-item {
+      flex: 0 0 auto;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .best-collection-item:hover {
+      transform: translateY(-8px);
+    }
+
+    /* CIRCLE IMAGE */
+    .best-collection-item img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .best-collection-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .best-collection-item h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+    }
+
+    /* ================= MOBILE SLIDER ================= */
+    @media (max-width: 768px) {
+
+      .best-collection-row {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-left: 15px;
+        gap: 25px;
+        scroll-behavior: smooth;
+      }
+
+      /* Hide scrollbar */
+      .best-collection-row::-webkit-scrollbar {
+        display: none;
+      }
+
+      .best-collection-item {
+        min-width: 150px;
+      }
+
+      .best-collection-item img {
+        width: 160px;
+        height: 160px;
+      }
+
+      .best-collection-title {
+        font-size: 26px;
+        margin-bottom: 30px;
+      }
+    }
+
+    /* *************************** */
+    /* ================= CATEGORY SECTION ================= */
+
+    .category-section {
+      background-color: #f5f1ea;
+      padding: 60px 0px;
+      text-align: center;
+    }
+
+    .category-tittle {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
+    /* DESKTOP GRID */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* CARD */
+    .category {
+      border-radius: 20px;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .category img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 15px;
+    }
+
+    .category-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .category h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .gross-weight {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* ================= TABLET ================= */
+    @media (max-width: 992px) {
+      .categories {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* ================= MOBILE SLIDER ================= */
+    @media (max-width: 768px) {
+
+      .category-tittle {
+        font-size: 26px;
+        margin-bottom: 30px;
+      }
+
+      .categories {
+        display: flex;
+        overflow-x: auto;
+        gap: 20px;
+        padding-left: 15px;
+        scroll-behavior: smooth;
+      }
+
+      /* Hide scrollbar */
+      .categories::-webkit-scrollbar {
+        display: none;
+      }
+
+      .category {
+        min-width: 220px;
+        flex: 0 0 auto;
+      }
+
+      .category img {
+        height: 200px;
+      }
+    }
+
 
   }
+
+  /* ================= SOCIAL SUBSCRIBE ================= */
+
+  .social-subscribe {
+    background: linear-gradient(135deg, #d6b09c, #c99bb3);
+    padding: 80px 8%;
+  }
+
+  .subscribe-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    color: #ffffff;
+  }
+
+  /* ================= LEFT ================= */
+
+  .subscribe-left h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .subscribe-left p {
+    max-width: 480px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+
+  /* ================= FORM ================= */
+
+  .subscribe-form {
+    display: flex;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .subscribe-form input {
+    flex: 1;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .subscribe-form button {
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 0 28px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+
+  .subscribe-form button:hover {
+    background: #333;
+  }
+
+  /* ================= RIGHT ================= */
+
+  .subscribe-right h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+
+  .social-icons a {
+    width: 45px;
+    height: 45px;
+    background: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    background: #000000;
+    color: #ffffff;
+    transform: translateY(-4px);
+  }
+
+  /* ================= TABLET ================= */
+
+  @media (max-width: 992px) {
+    .subscribe-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 40px;
+    }
+
+    .subscribe-left p {
+      margin: 0 auto 25px;
+    }
+
+    .subscribe-form {
+      margin: auto;
+    }
+  }
+
+  /* ================= MOBILE =================*
