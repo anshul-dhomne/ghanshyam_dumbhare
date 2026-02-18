@@ -5,42 +5,51 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   // ======================================================
-  // BANNER SLIDER
+  // BANNER SLIDER (AUTO + BUTTON + TOUCH SWIPE)
   // ======================================================
 
   const slides = document.querySelectorAll(".slide");
   const nextBtn = document.getElementById("nextSlide");
   const prevBtn = document.getElementById("prevSlide");
+  const bannerSlider = document.querySelector(".banner-slider");
 
   if (slides.length > 0) {
 
     let currentSlide = 0;
     let slideInterval;
+    let startX = 0;
+    let endX = 0;
 
+    // ===== SHOW SLIDE =====
     function showSlide(index) {
       slides.forEach(slide => slide.classList.remove("active"));
       slides[index].classList.add("active");
     }
 
+    // ===== NEXT SLIDE =====
     function nextSlide() {
       currentSlide = (currentSlide + 1) % slides.length;
       showSlide(currentSlide);
     }
 
+    // ===== PREVIOUS SLIDE =====
     function prevSlide() {
       currentSlide = (currentSlide - 1 + slides.length) % slides.length;
       showSlide(currentSlide);
     }
 
+    // ===== AUTO SLIDE START =====
     function startAutoSlide() {
       slideInterval = setInterval(nextSlide, 4000);
     }
 
+    // ===== RESET AUTO SLIDE =====
     function resetAutoSlide() {
       clearInterval(slideInterval);
       startAutoSlide();
     }
 
+    // ===== BUTTON EVENTS (DESKTOP) =====
     if (nextBtn && prevBtn) {
       nextBtn.addEventListener("click", function () {
         nextSlide();
@@ -50,6 +59,34 @@ document.addEventListener("DOMContentLoaded", function () {
       prevBtn.addEventListener("click", function () {
         prevSlide();
         resetAutoSlide();
+      });
+    }
+
+    // ======================================================
+    // TOUCH SWIPE SUPPORT (MOBILE)
+    // ======================================================
+
+    if (bannerSlider) {
+
+      bannerSlider.addEventListener("touchstart", function (e) {
+        startX = e.touches[0].clientX;
+        clearInterval(slideInterval); // Pause auto slide while swiping
+      });
+
+      bannerSlider.addEventListener("touchend", function (e) {
+        endX = e.changedTouches[0].clientX;
+
+        const difference = startX - endX;
+
+        if (difference > 50) {
+          nextSlide(); // Swipe Left
+        }
+
+        if (difference < -50) {
+          prevSlide(); // Swipe Right
+        }
+
+        startAutoSlide(); // Resume auto slide
       });
     }
 
@@ -169,13 +206,15 @@ fetch("data/products.json")
     console.error("JSON Load Error:", err);
   });
 
-// ================= FULL SCREEN MOBILE MENU =================
+
+// ======================================================
+// FULL SCREEN MOBILE MENU
+// ======================================================
 
 const menuToggle = document.getElementById("menuToggle");
 const navbarMenu = document.getElementById("navbarMenu");
 const menuClose = document.getElementById("menuClose");
 
-// Menu Toggle
 menuToggle.addEventListener("click", function () {
   navbarMenu.classList.add("active");
   menuToggle.style.display = "none";
@@ -187,7 +226,9 @@ menuClose.addEventListener("click", function () {
 });
 
 
-// ================= DROPDOWN TOGGLE =================
+// ======================================================
+// DROPDOWN TOGGLE (MOBILE MENU)
+// ======================================================
 
 const dropdowns = document.querySelectorAll(".dropdown");
 
@@ -200,17 +241,15 @@ dropdowns.forEach(function (dropdown) {
   // CLICK ON ARROW → OPEN DROPDOWN
   arrow.addEventListener("click", function (e) {
 
-    e.stopPropagation();     // stop bubbling
-    e.preventDefault();      // stop link redirect
+    e.stopPropagation();
+    e.preventDefault();
 
-    // Close other dropdowns
     dropdowns.forEach(function (item) {
       if (item !== dropdown) {
         item.classList.remove("active");
       }
     });
 
-    // Toggle current
     dropdown.classList.toggle("active");
   });
 
@@ -220,4 +259,3 @@ dropdowns.forEach(function (dropdown) {
   });
 
 });
-

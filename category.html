@@ -28,27 +28,48 @@
 
   <!-- ========== HEADER START ========== -->
   <header>
+
     <div class="navbar">
 
-      <!-- BRAND LOGO -->
+      <!-- ================= BRAND LOGO ================= -->
       <div class="brand">
-        <a href="index.html" style="text-decoration:none;color:inherit">
+        <a href="index.html">
           <img src="assets/images/main-logo/logo.png" alt="Ghanshyam Dumbhare Jewellers">
         </a>
       </div>
 
-      <!-- NAVIGATION -->
-      <nav>
+      <!-- HAMBURGER -->
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <!-- ================= NAVIGATION MENU ================= -->
+      <nav id="navbarMenu">
+
+        <!-- CLOSE BUTTON -->
+        <div class="menu-close" id="menuClose">
+          <i class="fas fa-times"></i>
+        </div>
+
         <ul>
+
+          <!-- HOME -->
           <li><a href="index.html">Home</a></li>
 
-          <!-- GOLD DROPDOWN -->
+          <!-- ================= GOLD DROPDOWN ================= -->
           <li class="dropdown">
-            <a href="category.html?metal=gold">Gold Jewellery</a>
-            <!-- TWO COLUMN DROPDOWN -->
+
+            <div class="dropdown-header">
+              <a href="category.html?metal=gold" class="dropdown-link">
+                Gold Jewellery
+              </a>
+              <span class="mobile-arrow">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </div>
+
             <ul class="dropdown-menu two-column">
 
-              <!-- WOMEN -->
               <li class="dropdown-column">
                 <span class="dropdown-title">Women</span>
                 <a href="category.html?metal=gold&cat=ladies-ring">Ring</a>
@@ -58,10 +79,11 @@
                 <a href="category.html?metal=gold&cat=ladies-mangalsutra">Mangalsutra</a>
                 <a href="category.html?metal=gold&cat=ladies-necklace">Necklace</a>
                 <a href="category.html?metal=gold&cat=ladies-bangles">Bangles</a>
-                <a href="category.html?metal=gold&cat=ladies-bracelet"> Bracelet</a>
-                <a href="category.html?metal=gold&cat=ladies-kada"> Kada</a>
+                <a href="category.html?metal=gold&cat=ladies-bracelet">Bracelet</a>
+                <a href="category.html?metal=gold&cat=ladies-kada">Kada</a>
                 <a href="category.html?metal=gold&cat=ladies-nath">Nath</a>
-                <!-- MEN -->
+              </li>
+
               <li class="dropdown-column">
                 <span class="dropdown-title">Men</span>
                 <a href="category.html?metal=gold&cat=gents-ring">Ring</a>
@@ -72,14 +94,21 @@
 
             </ul>
           </li>
-          <!-- SILVER DROPDOWN -->
-          <li class="dropdown">
-            <a href="category.html?metal=silver">Silver Jewellery</a>
 
-            <!-- TWO COLUMN DROPDOWN -->
+          <!-- ================= SILVER ================= -->
+          <li class="dropdown">
+
+            <div class="dropdown-header">
+              <a href="category.html?metal=silver">
+                Silver Jewellery
+              </a>
+              <span class="mobile-arrow">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </div>
+
             <ul class="dropdown-menu two-column">
 
-              <!-- WOMEN -->
               <li class="dropdown-column">
                 <span class="dropdown-title">Women</span>
                 <a href="category.html?metal=silver&cat=ladies-payal">Payal</a>
@@ -88,31 +117,33 @@
                 <a href="category.html?metal=silver&cat=ladies-chain">Chain</a>
                 <a href="category.html?metal=silver&cat=ladies-bracelet">Bracelet</a>
                 <a href="category.html?metal=silver&cat=ladies-kada">Kada</a>
-
               </li>
 
-
-              <!-- MEN -->
               <li class="dropdown-column">
                 <span class="dropdown-title">Men</span>
                 <a href="category.html?metal=silver&cat=gents-ring">Ring</a>
                 <a href="category.html?metal=silver&cat=gents-chain">Chain</a>
                 <a href="category.html?metal=silver&cat=gents-bracelet">Bracelet</a>
                 <a href="category.html?metal=silver&cat=gents-kada">Kada</a>
-
               </li>
-
 
             </ul>
           </li>
-          <!-- DIAMOND DROPDOWN -->
-          <li class="dropdown">
-            <a href="category.html?metal=diamond">Diamond Jewellery</a>
 
-            <!-- TWO COLUMN DROPDOWN -->
+          <!-- ================= DIAMOND ================= -->
+          <li class="dropdown">
+
+            <div class="dropdown-header">
+              <a href="category.html?metal=diamond">
+                Diamond Jewellery
+              </a>
+              <span class="mobile-arrow">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </div>
+
             <ul class="dropdown-menu two-column">
 
-              <!-- WOMEN -->
               <li class="dropdown-column">
                 <span class="dropdown-title">Women</span>
                 <a href="category.html?metal=diamond&cat=ladies-ring">Ring</a>
@@ -123,17 +154,18 @@
                 <a href="category.html?metal=diamond&cat=ladies-nose-pin">Nose-pin</a>
               </li>
 
-              <!-- MEN -->
               <li class="dropdown-column">
                 <span class="dropdown-title">Men</span>
-                <a href="category.html?metal=diamond&cat=gents-ring"> Ring</a>
-                <a href="category.html?metal=diamond&cat=gents-chain"> Chain</a>
-                <a href="category.html?metal=diamond&cat=gents-bracelet"> Bracelet</a>
+                <a href="category.html?metal=diamond&cat=gents-ring">Ring</a>
+                <a href="category.html?metal=diamond&cat=gents-chain">Chain</a>
+                <a href="category.html?metal=diamond&cat=gents-bracelet">Bracelet</a>
               </li>
 
             </ul>
           </li>
+
           <li><a href="contact.html">Contact</a></li>
+
         </ul>
       </nav>
     </div>
@@ -287,6 +319,7 @@
 
   <!-- JS -->
   <script src="js/category.js"></script>
+  <script src="js/index.js"></script>
 
 
 </body>

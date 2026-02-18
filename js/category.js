@@ -87,7 +87,7 @@ function renderProducts(products) {
     box.className = "category";   // SAME design class as index page
 
     box.innerHTML = `
-      <a href="product-details.html?id=${p.id}" class="bestseller-link">
+      <a href="product-details.html?id=${p.id}" class="category-link">
         <img src="${Array.isArray(p.image) ? p.image[0] : p.image}" alt="${p.name}">
         <h4>${p.name}</h4>
         <p class="gross-weight">
