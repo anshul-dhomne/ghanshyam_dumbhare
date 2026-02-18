@@ -185,6 +185,9 @@
 
     <!-- FILTERS START -->
     <aside class="filters">
+      <button class="filter-close" id="filterClose">
+        <i class="fas fa-times"></i>
+      </button>
       <h3>Filters</h3>
 
       <div class="filter-group">
@@ -222,13 +225,21 @@
     <!-- SORT START -->
     <div>
       <div class="sort">
-        <p>Showing products</p>
+
+        <button class="filter-btn" id="filterOpen">
+          <i class="fas fa-sliders-h"></i> Filter
+        </button>
+
+        <p class="product-count">Showing products</p>
+
         <select>
           <option>Sort by</option>
           <option>Weight: Low to High</option>
           <option>Weight: High to Low</option>
         </select>
+
       </div>
+
 
 
       <!-- PRODUCTS GRID START -->

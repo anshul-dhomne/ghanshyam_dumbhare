@@ -103,7 +103,7 @@ body {
     padding: 15px;
     text-align: center;
     transition: 0.3s;
-   
+
 }
 
 .product:hover {
@@ -162,15 +162,139 @@ body {
     transform: scale(1.05);
 }
 
+/* corss Buttton (x) */
+.filter-btn {
+    display: none;
+}
+
+.filter-close {
+    display: none;
+}
 
 
-/* ===== MOBILE ===== */
-@media(max-width: 900px) {
+
+/* ================================================= */
+/* =============== RESPONSIVE BREAKPOINTS ========== */
+/* ================================================= */
+
+/* ---------- Small Laptop (≤1199px) ---------- */
+@media (max-width: 1199px) {
+
+    /* Small laptop styles here */
+
+}
+
+
+/* ---------- Tablet (≤991px) ---------- */
+@media (max-width: 991px) {
+    .container {
+        padding: 20px 20px;
+
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .filter-close {
+        display: block;
+    }
+
+    /* Show Filter Button */
+    .filter-btn {
+        display: inline-block;
+        padding: 8px 15px;
+        background: var(--gold);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100px;
+    }
+
+    /* Filter Panel */
+    .filters {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        background: #fff;
+        z-index: 2000;
+        padding: 60px 20px 20px;
+        /* Top padding for close button */
+        overflow-y: auto;
+        transition: 0.3s ease;
+        box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* When Active */
+    .filters.active {
+        left: 0;
+    }
+
+    /* Close Button Top Right */
+    .filter-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .filter-group label {
+        font-size: 16px;
+    }
+
+    /* Hide Showing Products Text */
+    .product-count {
+        display: none;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Make layout single column */
     .container {
         grid-template-columns: 1fr;
     }
 
-    .filters {
-        order: 2;
+    .sort select {
+        width: 100px;
+        padding: 8px 15px;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+
     }
+}
+
+
+
+/* ---------- Large Mobile (≤767px) ---------- */
+@media (max-width: 767px) {
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+}
+
+
+
+/* ---------- Small Mobile (≤480px) ---------- */
+@media (max-width: 480px) {
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
 }

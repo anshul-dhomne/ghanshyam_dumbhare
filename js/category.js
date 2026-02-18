@@ -164,3 +164,21 @@ document
   .forEach(el => el.addEventListener("change", applyFiltersAndSort));
 
 sortSelect.addEventListener("change", applyFiltersAndSort);
+
+// ================= FILTER TOGGLE =================
+
+const filterOpen = document.getElementById("filterOpen");
+const filterClose = document.getElementById("filterClose");
+const filters = document.querySelector(".filters");
+
+if (filterOpen) {
+  filterOpen.addEventListener("click", () => {
+    filters.classList.add("active");
+  });
+}
+
+if (filterClose) {
+  filterClose.addEventListener("click", () => {
+    filters.classList.remove("active");
+  });
+}
