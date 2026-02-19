@@ -1,4 +1,4 @@
-/* FORM → WHATSAPP */
+// ================= FORM → WHATSAPP =================
 document.getElementById("enquiryForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -16,13 +16,20 @@ document.getElementById("enquiryForm").addEventListener("submit", function (e) {
     `Enquiry: ${type}%0A` +
     `Message: ${message}`;
 
-  window.open(`https://wa.me/919999999999?text=${whatsappMessage}`, "_blank");
+  window.open(`https://wa.me/917057832844?text=${whatsappMessage}`, "_blank");
 });
 
-/* FAQ ACCORDION */
+
+// ================= FAQ ACCORDION =================
 document.querySelectorAll(".faq-question").forEach((btn) => {
   btn.addEventListener("click", () => {
-    const answer = btn.nextElementSibling;
-    answer.style.display = answer.style.display === "block" ? "none" : "block";
+
+    document.querySelectorAll(".faq-answer").forEach((ans) => {
+      if (ans !== btn.nextElementSibling) {
+        ans.classList.remove("open");
+      }
+    });
+
+    btn.nextElementSibling.classList.toggle("open");
   });
 });
