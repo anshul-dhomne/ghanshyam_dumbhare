@@ -1,0 +1,449 @@
+  :root {
+      --gold: #c9a24d;
+      --beige: #f5f1ea;
+      --dark: #222;
+      --grey: #666;
+      --white: #ffffff;
+  }
+
+  /* Reset */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--dark);
+      line-height: 1.7;
+  }
+
+  h1,
+  h2,
+  h3 {
+      font-family: 'Playfair Display', serif;
+  }
+
+  section {
+      padding: 80px 10%;
+  }
+
+  /* ================= HERO ================= */
+  .about-hero {
+      background: var(--beige);
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px;
+  }
+
+  .about-hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+      color: var(--dark);
+  }
+
+  .about-hero p {
+      color: var(--grey);
+      font-size: 18px;
+  }
+
+  /* ================= STORY ================= */
+  .container {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      flex-wrap: wrap;
+  }
+
+  .story-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* vertical center */
+      align-items: center;
+      /* horizontal center */
+      text-align: center;
+      /* center text */
+  }
+
+  .story-text h2 {
+      margin-bottom: 20px;
+      font-size: 32px;
+  }
+
+  .story-text p {
+      margin-bottom: 15px;
+      color: var(--grey);
+  }
+
+  .story-image {
+      flex: 1;
+  }
+
+  .story-image img {
+      width: 100%;
+      border-radius: 10px;
+  }
+
+  /* ================= LEADERSHIP SECTION ================= */
+
+  .leadership-section {
+      padding: 100px 10%;
+      background: #fff;
+  }
+
+  .leader {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      margin-bottom: 100px;
+  }
+
+  .leader-image {
+      flex: 1;
+  }
+
+  .leader-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  }
+
+  .leader-content {
+      flex: 1;
+  }
+
+  .designation {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      color: #c9a24d;
+      font-weight: 600;
+  }
+
+  .leader-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      margin: 10px 0 20px;
+  }
+
+  .leader-content p {
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.7;
+  }
+
+  /* Reverse Layout (Image Right) */
+  .reverse {
+      flex-direction: row-reverse;
+  }
+
+
+  /* ================= CORE VALUES ================= */
+  .core-values {
+      background: var(--light);
+      text-align: center;
+  }
+
+  .core-values h2 {
+      margin-bottom: 50px;
+      font-size: 32px;
+  }
+
+  .values-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+  }
+
+  .value-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      transition: 0.3s;
+  }
+
+  .value-box i {
+      font-size: 30px;
+      color: var(--gold);
+      margin-bottom: 15px;
+  }
+
+  .value-box:hover {
+      transform: translateY(-10px);
+  }
+
+  /* ===== WHY SECTION (DIRECTOR STYLE) ===== */
+
+  .why-section {
+      padding: 100px 10%;
+      background: #fff;
+  }
+
+  .why-container {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+  }
+
+  .why-content {
+      flex: 1;
+  }
+
+  .why-image {
+      flex: 1;
+  }
+
+  .why-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  }
+
+  .why-label {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      color: #c9a24d;
+      font-weight: 600;
+  }
+
+  .why-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      margin: 10px 0 20px;
+  }
+
+  .why-content p {
+      color: #555;
+      margin-bottom: 15px;
+      line-height: 1.7;
+  }
+
+  .why-list {
+      list-style: none;
+      padding: 0;
+  }
+
+  .why-list li {
+      margin-bottom: 10px;
+      font-weight: 500;
+  }
+
+
+  /* ================= CTA ================= */
+  .about-cta {
+      text-align: center;
+  }
+
+  .about-cta h2 {
+      margin-bottom: 15px;
+  }
+
+  .cta-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: var(--gold);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 500;
+  }
+
+  .cta-btn:hover {
+      opacity: 0.9;
+  }
+
+
+  /* GLOBAL GAP FIX (ALL SCREEN SIZES) */
+
+  .leader {
+      gap: 20px;
+      /* controlled spacing desktop */
+  }
+
+  .leader-image {
+      margin-bottom: 0 !important;
+  }
+
+  .leader-content {
+      padding-top: 0 !important;
+  }
+
+  .designation {
+      display: block;
+      margin: 5px 0;
+  }
+
+  .leader-content h2 {
+      margin: 5px 0 8px 0;
+  }
+
+  .leader-content p {
+      margin: 0 0 10px 0;
+  }
+
+  /* ================================================= */
+  /* *****************RESPONSIVE ********************* */
+  /* ================================================= */
+
+
+  /* ================================================= */
+  /* ================= 1199px ======================== */
+  /* ================================================= */
+
+  @media (max-width: 1199px) {
+
+      .leader {
+          gap: 20px;
+          /* reduced from 30px */
+      }
+
+      .leader-content h2,
+      .why-content h2 {
+          font-size: 30px;
+      }
+
+      .values-container {
+          grid-template-columns: repeat(3, 1fr);
+      }
+  }
+
+
+  /* ================================================= */
+  /* ================= 991px ========================= */
+  /* ================================================= */
+
+  @media (max-width: 991px) {
+
+      /* Founder & Director Layout */
+      .leader,
+      .reverse {
+          flex-direction: column !important;
+          text-align: center;
+          gap: 10px !important;
+      }
+
+      /* WHY / SHOWROOM SECTION */
+      .why-container {
+          flex-direction: column !important;
+          text-align: center;
+          gap: 10px !important;
+      }
+
+      /* Force showroom image on TOP */
+      .why-image {
+          order: 1;
+          margin-bottom: 0 !important;
+      }
+
+      .why-content {
+          order: 2;
+      }
+
+      .leader-image {
+          margin-bottom: 0 !important;
+      }
+
+      .leader-content {
+          padding-top: 0 !important;
+      }
+
+      .designation,
+      .why-label {
+          margin-bottom: 5px;
+      }
+
+      .leader-content h2,
+      .why-content h2 {
+          margin: 5px 0 10px 0;
+          font-size: 26px;
+      }
+
+      .leader-content p,
+      .why-content p {
+          margin-bottom: 10px;
+      }
+
+      /* Core Values */
+      .values-container {
+          grid-template-columns: repeat(2, 1fr);
+      }
+  }
+
+
+  /* ================================================= */
+  /* ================= 767px ========================= */
+  /* ================================================= */
+
+  @media (max-width: 767px) {
+
+      /* Section Padding */
+      .leadership-section,
+      .why-section,
+      .core-values {
+          padding: 60px 30px;
+      }
+
+      /* Core Values - Column */
+      .values-container {
+          grid-template-columns: 1fr;
+      }
+
+      .value-box {
+          padding: 25px;
+      }
+
+      .leader-content h2,
+      .why-content h2 {
+          font-size: 24px;
+      }
+
+      .leader,
+      .why-container {
+          gap: 10px !important;
+      }
+  }
+
+
+  /* ================================================= */
+  /* ================= 480px ========================= */
+  /* ================================================= */
+
+  @media (max-width: 480px) {
+
+      .leadership-section,
+      .why-section,
+      .core-values {
+          padding: 50px 20px;
+      }
+
+      .leader,
+      .why-container {
+          gap: 8px !important;
+          /* ultra tight */
+      }
+
+      .leader-content h2,
+      .why-content h2 {
+          font-size: 22px;
+      }
+
+      .leader-content p,
+      .why-content p {
+          font-size: 14px;
+      }
+
+      .designation,
+      .why-label {
+          font-size: 11px;
+          letter-spacing: 1px;
+      }
+
+      .value-box i {
+          font-size: 22px;
+      }
+  }
