@@ -23,6 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const sizeRow = document.getElementById("sizeRow");
   const sizeSelect = document.getElementById("sizeSelect");
 
+  // ✅ NEW DOM ELEMENTS (PRODUCT CODE & DESCRIPTION)
+  const productCodeEl = document.getElementById("productCode");
+  const productDescEl = document.getElementById("productDesc");
+
   // ---------- LOAD PRODUCTS ----------
   fetch("data/products.json")
     .then(res => res.json())
@@ -108,6 +112,13 @@ document.addEventListener("DOMContentLoaded", function () {
       if (purityValue)
         purityValue.innerText = product.purity;
 
+      // ---------- ✅ PRODUCT CODE & DESCRIPTION ----------
+      if (productCodeEl)
+        productCodeEl.innerText = product.product_code;
+
+      if (productDescEl)
+        productDescEl.innerText = product.product_desc;
+
       // ---------- SIZE LOGIC ----------
       if (product.size && Array.isArray(product.size) && product.size.length) {
 
@@ -135,11 +146,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // ---------- WHATSAPP ----------
       if (whatsappLink) {
         whatsappLink.href =
-          `https://wa.me/91XXXXXXXXXX?text=I am interested in ${product.name}`;
+          `https://wa.me/917057832844?text=Hello Ghanshyam Jewellers, I am interested in ${product.name} (Product Code: ${product.product_code})`;
       }
 
     })
     .catch(err => console.error("Product details error:", err));
 
 });
-
