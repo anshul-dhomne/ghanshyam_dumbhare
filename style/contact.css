@@ -5,11 +5,19 @@
     --purple: #4b2354;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
 /* ================= HERO ================= */
 .contact-hero {
     background: var(--beige);
     text-align: center;
-    padding: 70px 20px;
+    padding: 60px 20px;
 }
 
 .contact-hero h1 {
