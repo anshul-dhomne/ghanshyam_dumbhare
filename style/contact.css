@@ -33,11 +33,11 @@
 
 /* ================= MAIN LAYOUT ================= */
 .contact-form-wrapper {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 60px auto;
     padding: 0 20px;
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 650px 1fr;
     gap: 60px;
     align-items: stretch;
 }
@@ -51,6 +51,21 @@
     height: 500px;
 }
 
+.contact-cards .card {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-cards .card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.contact-cards .card:hover {
+    transform: translateY(-5px);
+}
+
 .card {
     background: #fff;
     border-radius: 16px;
@@ -61,6 +76,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.card .number {
+    font-family: 'Poppins', sans-serif;
 }
 
 .card i {
@@ -118,7 +137,7 @@
 .submit-btn {
     width: 100%;
     height: 42px;
-    background: var(--purple);
+    background: linear-gradient(to bottom right, #A3001E, #6F0014);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -126,31 +145,9 @@
     cursor: pointer;
 }
 
-/* ================= RESPONSIVE ================= */
-@media (max-width: 900px) {
-
-    .contact-form-wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-cards {
-        height: auto;
-        grid-template-columns: 1fr;
-    }
-
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-
-    .enquiry-box {
-        height: auto;
-    }
-}
-
-
 /* ================= STORE ================= */
 .store-section {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 80px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -235,31 +232,63 @@
 }
 
 /* ================= RESPONSIVE ================= */
+/* ================= RESPONSIVE FIX ================= */
 @media (max-width: 900px) {
 
+    /* Make wrapper single column */
+    .contact-form-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    /* Enquiry form first */
+    .enquiry-box {
+        order: 1;
+    }
+
+    /* Contact cards second */
+    .contact-cards {
+        order: 2;
+    }
+
+    /* MAIN WRAPPER */
     .contact-form-wrapper {
         grid-template-columns: 1fr;
         gap: 40px;
+        align-items: unset;
     }
 
-    .contact-form-wrapper::before {
-        display: none;
+    /* REMOVE FIXED HEIGHTS (VERY IMPORTANT) */
+    .contact-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
     }
 
+    .enquiry-box {
+        height: auto;
+        max-height: none;
+        overflow: visible;
+    }
+
+    /* STORE SECTION */
     .store-section {
         grid-template-columns: 1fr;
         gap: 40px;
     }
 
-    .contact-cards {
-        grid-template-columns: 1fr;
-    }
-
+    /* FORM ROW FIX */
     .form-row {
         grid-template-columns: 1fr;
     }
 
+    /* HERO TEXT SIZE */
     .contact-hero h1 {
         font-size: 28px;
     }
+
+    /* CARD SPACING */
+    .card {
+        padding: 25px 20px;
+    }
+
 }
