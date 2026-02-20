@@ -49,12 +49,18 @@
     display: flex;
     gap: 25px;
     list-style: none;
+    flex-wrap: nowrap;
+  }
+
+  nav ul li {
+    white-space: nowrap;
   }
 
   nav ul li a {
     text-decoration: none;
     color: var(--dark);
     font-weight: 500;
+    white-space: nowrap;
   }
 
   nav ul li a:hover {
