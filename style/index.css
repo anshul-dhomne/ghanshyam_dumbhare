@@ -610,6 +610,21 @@
   /* max-width: 991px */
   @media (max-width: 991px) {
 
+    /* ===== FORCE FIXED HEADER ON MOBILE ===== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 12000;
+      background: #fff;
+    }
+
+    body {
+      padding-top: 80px;
+      /* Adjust if needed */
+    }
+
     html,
     body {
       overflow-x: hidden;
