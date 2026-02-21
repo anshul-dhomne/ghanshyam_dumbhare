@@ -409,7 +409,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     background-color: #f5f1ea;
-    padding: 0 40px;
+    /* padding: 0 40px; */
     /* ADD THIS */
   }
 
@@ -854,16 +854,15 @@
 
     /* CATEGORY SLIDER (Best Seller + New Arrival) */
     /* Remove large side padding */
-    .category-section {
-      padding: 40px 0;
+    .category-section .container {
+      padding: 0 16px;
     }
 
     .categories {
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
-      gap: 12px;
-      padding: 0 12px;
+      gap: 16px;
     }
 
     .categories::-webkit-scrollbar {
@@ -871,13 +870,15 @@
     }
 
     .category {
-      flex: 0 0 calc((100vw - 36px) / 2);
+      flex: 0 0 calc((100% - 16px) / 2);
     }
 
     .category img {
-      width: 100%;
-      height: auto;
+      height: 180px;
+      width: 180px;
+      /* Slightly smaller for mobile */
     }
+
 
 
 
