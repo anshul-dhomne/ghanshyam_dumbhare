@@ -338,6 +338,9 @@
   }
 
   /* ===== BEST COLLECTION ===== */
+  .container {
+    max-width: 1400px;
+  }
 
   .best-collection-section {
     padding: 80px 0;
@@ -366,11 +369,10 @@
   }
 
   .best-collection-item img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
   }
 
   .best-collection-item h4 {
