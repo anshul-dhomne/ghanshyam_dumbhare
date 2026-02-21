@@ -347,6 +347,8 @@
     align-items: center;
     gap: 40px;
     flex-wrap: nowrap;
+    padding: 0 40px;
+    /* ADD THIS */
   }
 
   .best-collection-item {
@@ -397,7 +399,8 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     background-color: #f5f1ea;
-    ;
+    padding: 0 40px;
+    /* ADD THIS */
   }
 
   .category {
