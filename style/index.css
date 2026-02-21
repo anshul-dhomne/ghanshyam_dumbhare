@@ -827,7 +827,7 @@
       overflow-x: auto;
       justify-content: flex-start;
       gap: 25px;
-      padding-left: 15px;
+      padding-left: 5px;
     }
 
     .best-collection-row::-webkit-scrollbar {
@@ -861,7 +861,7 @@
     }
 
     .category {
-      min-width: 180px;
+      min-width: 190px;
       /* Slightly bigger than image */
       flex: 0 0 auto;
       text-align: center;
