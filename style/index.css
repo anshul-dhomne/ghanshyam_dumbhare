@@ -853,14 +853,14 @@
     /* CATEGORY SLIDER (Best Seller + New Arrival) */
     /* Remove large side padding */
     .category-section .container {
-      padding: 0 16px;
+      padding: 0 30px;
     }
 
     .categories {
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
-      gap: 16px;
+      gap: 10px;
       scroll-snap-type: x mandatory;
     }
 
@@ -874,8 +874,8 @@
     }
 
     .category img {
-      height: 180px;
-      width: 180px;
+      height: 160px;
+      width: 160px;
       /* Slightly smaller for mobile */
     }
 
