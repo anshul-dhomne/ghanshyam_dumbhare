@@ -391,10 +391,8 @@
   /* ===== CATEGORY / BEST SELLER / NEW ARRIVAL ===== */
   .category-section {
     background-color: #f5f1ea;
-    /* padding: 40px auto; */
-    padding: 10px 0px;
-    max-width: 100%;
-    margin: auto;
+    padding: 10px 0;
+    width: 100%;
   }
 
   .category-tittle {
@@ -404,24 +402,23 @@
     margin-bottom: 50px;
   }
 
+  /* ===== DESKTOP GRID ===== */
+
   .categories {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    background-color: #f5f1ea;
-    /* padding: 0 40px; */
-    /* ADD THIS */
   }
 
   .category {
-    border-radius: 22px;
     text-align: center;
-    transition: all 0.3s ease;
   }
 
   .category img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    /* REMOVE 300px */
+    aspect-ratio: 1 / 1;
+    /* Perfect square */
     object-fit: cover;
     border-radius: 16px;
     margin-bottom: 15px;
@@ -438,6 +435,7 @@
     font-size: 18px;
     margin-bottom: 6px;
   }
+
 
   .gross-weight {
     font-size: 14px;
@@ -863,6 +861,7 @@
       flex-wrap: nowrap;
       overflow-x: auto;
       gap: 16px;
+      scroll-snap-type: x mandatory;
     }
 
     .categories::-webkit-scrollbar {
@@ -870,7 +869,8 @@
     }
 
     .category {
-      flex: 0 0 calc((100% - 16px) / 2);
+      flex: 0 0 50%;
+      scroll-snap-align: start;
     }
 
     .category img {
@@ -878,9 +878,6 @@
       width: 180px;
       /* Slightly smaller for mobile */
     }
-
-
-
 
     .category h4 {
       font-size: 14px;
