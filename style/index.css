@@ -840,8 +840,8 @@
 
     /* EXACTLY 2 items per row */
     .best-collection-item {
-    flex: 0 0 calc((100% - 16px) / 2);
-}
+      flex: 0 0 calc((100% - 16px) / 2);
+    }
 
     .best-collection-item img {
       width: 160px;
@@ -862,24 +862,23 @@
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
-      gap: 16px;
-      padding: 0 16px;
-      /* Equal left-right spacing */
+      gap: 12px;
+      padding: 0 12px;
     }
 
     .categories::-webkit-scrollbar {
       display: none;
     }
 
-    /* EXACTLY 2 boxes per screen */
     .category {
-      flex: 0 0 calc((100% - 16px) / 2);
+      flex: 0 0 calc((100vw - 36px) / 2);
     }
 
     .category img {
-      width: 180px;
-      height: 180px;
+      width: 100%;
+      height: auto;
     }
+
 
 
     .category h4 {
