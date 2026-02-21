@@ -391,7 +391,7 @@
   /* ===== CATEGORY / BEST SELLER / NEW ARRIVAL ===== */
   .category-section {
     background-color: #f5f1ea;
-    padding: 10px 10px;
+    padding: 10px 0;
     width: 100%;
   }
 
@@ -860,8 +860,9 @@
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
-      gap: 10px;
-      scroll-snap-type: x mandatory;
+      gap: 12px;
+      padding: 0 12px;
+      /* equal internal spacing */
     }
 
     .categories::-webkit-scrollbar {
@@ -869,14 +870,12 @@
     }
 
     .category {
-      flex: 0 0 50%;
-      scroll-snap-align: start;
+      flex: 0 0 calc((100% - 12px) / 2);
     }
 
     .category img {
-      height: 160px;
-      width: 160px;
-      /* Slightly smaller for mobile */
+      width: 100%;
+      height: auto;
     }
 
     .category h4 {
