@@ -851,9 +851,9 @@
     .categories {
       display: flex;
       overflow-x: auto;
+      scroll-snap-type: x mandatory;
       gap: 20px;
-      /* GAP BETWEEN CARDS */
-      /* padding-left: 15px; */
+      padding: 0 16px;
     }
 
     .categories::-webkit-scrollbar {
@@ -861,21 +861,13 @@
     }
 
     .category {
-      min-width: 180px;
-      /* Slightly bigger than image */
-      flex: 0 0 auto;
-      text-align: center;
+      flex: 0 0 calc(50% - 10px);
+      scroll-snap-align: start;
     }
 
     .category img {
-      width: 150px;
-      /* EXACT SIZE */
-      height: 150px;
-      /* EXACT SIZE */
-      object-fit: cover;
-      margin: 0 auto 10px;
-      /* CENTER IMAGE */
-      display: block;
+      width: 100%;
+      height: auto;
     }
 
     .category h4 {
