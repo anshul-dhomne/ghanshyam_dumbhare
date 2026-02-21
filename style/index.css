@@ -821,21 +821,26 @@
   /* max-width: 767px */
   @media (max-width: 767px) {
 
-    /* BEST COLLECTION SLIDER */
+    .best-collection-section .container {
+      padding: 0 16px;
+    }
+
+    /* Keep everything in ONE ROW */
     .best-collection-row {
+      display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
+      gap: 15px;
       justify-content: flex-start;
-      gap: 25px;
-      /* padding-left: 5px; */
     }
 
     .best-collection-row::-webkit-scrollbar {
       display: none;
     }
 
+    /* EXACTLY 2 items per row */
     .best-collection-item {
-      min-width: 160px;
+      flex: 0 0 50%;
     }
 
     .best-collection-item img {
@@ -848,27 +853,34 @@
     }
 
     /* CATEGORY SLIDER (Best Seller + New Arrival) */
+    /* Remove large side padding */
+    .category-section {
+      padding: 40px 0;
+    }
+
     .categories {
       display: flex;
+      flex-wrap: nowrap;
       overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 20px;
+      gap: 16px;
       padding: 0 16px;
+      /* Equal left-right spacing */
     }
 
     .categories::-webkit-scrollbar {
       display: none;
     }
 
+    /* EXACTLY 2 boxes per screen */
     .category {
-      flex: 0 0 calc(50% - 10px);
-      scroll-snap-align: start;
+      flex: 0 0 calc(50% - 8px);
     }
 
     .category img {
-      width: 100%;
-      height: auto;
+      width: 180px;
+      height: 180px;
     }
+
 
     .category h4 {
       font-size: 14px;
