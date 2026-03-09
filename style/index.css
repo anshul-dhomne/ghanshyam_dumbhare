@@ -152,32 +152,21 @@
   }
 
   /* ====== BANNER SLIDER ======= */
-
   .banner-slider {
     position: relative;
     width: 100%;
-    height: 420px;
+    height: 65vh;
     overflow: hidden;
   }
 
-  .banner-slider .slides {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-
   .banner-slider .slide {
-    position: absolute;
-    inset: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
+    height: auto;
+    display: none;
   }
 
   .banner-slider .slide.active {
-    opacity: 1;
+    display: block;
   }
 
   /* CONTROLS */
@@ -391,7 +380,7 @@
   /* ===== CATEGORY / BEST SELLER / NEW ARRIVAL ===== */
   .category-section {
     background-color: #f5f1ea;
-    padding: 10px 0;
+    padding: 10px 20px;
     width: 100%;
   }
 
