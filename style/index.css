@@ -674,7 +674,6 @@
 
     body {
       padding-top: 80px;
-      /* Adjust if needed */
     }
 
     html,
@@ -787,7 +786,7 @@
 
     /* BANNER */
     .banner-slider {
-      height: 50vh;
+      aspect-ratio: 1920 / 900;
     }
 
     /* HIDE BANNER BUTTONS ON MOBILE & TABLET */
@@ -849,8 +848,7 @@
       font-size: 26px;
     }
 
-    /* CATEGORY SLIDER (Best Seller + New Arrival) */
-    /* Remove large side padding */
+    /* CATEGORY SLIDER */
     .category-section .container {
       padding: 0 16px;
     }
@@ -861,7 +859,6 @@
       overflow-x: auto;
       gap: 12px;
       padding: 0 12px;
-      /* equal internal spacing */
     }
 
     .categories::-webkit-scrollbar {
@@ -885,7 +882,6 @@
       font-size: 26px;
     }
 
-
   }
 
   /* ================= SMALL MOBILE ================= */
@@ -897,12 +893,11 @@
     }
 
     .banner-slider {
-      height: 35vh;
+      aspect-ratio: 1920 / 1100;
     }
 
     .subscribe-form {
       flex-direction: row;
-      /* Keep in one line */
       border-radius: 30px;
     }
 
