@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ===== SHOW SLIDE =====
     function showSlide(index) {
-      slides.forEach(slide => slide.classList.remove("active"));
+      slides.forEach(function (slide) {
+        slide.classList.remove("active");
+      });
       slides[index].classList.add("active");
     }
 
@@ -51,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ===== BUTTON EVENTS (DESKTOP) =====
     if (nextBtn && prevBtn) {
+
       nextBtn.addEventListener("click", function () {
         nextSlide();
         resetAutoSlide();
@@ -60,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         prevSlide();
         resetAutoSlide();
       });
+
     }
 
     // ======================================================
@@ -70,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       bannerSlider.addEventListener("touchstart", function (e) {
         startX = e.touches[0].clientX;
-        clearInterval(slideInterval); // Pause auto slide while swiping
+        clearInterval(slideInterval);
       });
 
       bannerSlider.addEventListener("touchend", function (e) {
@@ -79,15 +83,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const difference = startX - endX;
 
         if (difference > 50) {
-          nextSlide(); // Swipe Left
+          nextSlide();
         }
 
         if (difference < -50) {
-          prevSlide(); // Swipe Right
+          prevSlide();
         }
 
-        startAutoSlide(); // Resume auto slide
+        startAutoSlide();
       });
+
     }
 
     showSlide(currentSlide);
@@ -124,12 +129,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     scroller.addEventListener("mousemove", function (e) {
+
       if (!isDown) return;
 
       e.preventDefault();
       const x = e.pageX - scroller.offsetLeft;
       const walk = (x - startX) * 1.5;
+
       scroller.scrollLeft = scrollLeft - walk;
+
     });
 
     // ===== TOUCH SUPPORT =====
@@ -139,13 +147,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     scroller.addEventListener("touchmove", function (e) {
+
       const x = e.touches[0].pageX;
       const walk = (x - startX) * 1.5;
+
       scroller.scrollLeft = scrollLeft - walk;
+
     });
 
     // ===== AUTO SCROLL =====
     function startAutoScroll() {
+
       autoScroll = setInterval(function () {
 
         scroller.scrollLeft += 1;
@@ -155,6 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
       }, 20);
+
     }
 
     function stopAutoScroll() {
@@ -167,95 +180,111 @@ document.addEventListener("DOMContentLoaded", function () {
     startAutoScroll();
   }
 
-});
 
+  // ======================================================
+  // AUTO GROSS WEIGHT FETCH (NO PRICE)
+  // ======================================================
 
-// ======================================================
-// AUTO GROSS WEIGHT FETCH (NO PRICE)
-// ======================================================
+  fetch("data/products.json")
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (data) {
 
-fetch("data/products.json")
-  .then(function (res) {
-    return res.json();
-  })
-  .then(function (data) {
+      let allProducts = [];
 
-    let allProducts = [];
+      Object.keys(data).forEach(function (metal) {
 
-    Object.keys(data).forEach(function (metal) {
-      Object.keys(data[metal]).forEach(function (gender) {
-        allProducts = allProducts.concat(data[metal][gender]);
-      });
-    });
+        Object.keys(data[metal]).forEach(function (gender) {
 
-    document.querySelectorAll(".gross-weight").forEach(function (el) {
+          allProducts = allProducts.concat(data[metal][gender]);
 
-      const id = parseInt(el.dataset.productId);
-      const product = allProducts.find(function (p) {
-        return p.id === id;
+        });
+
       });
 
-      if (product && product.gross_weight) {
-        el.textContent = "Gross Weight: " + product.gross_weight + " g";
-      }
+      document.querySelectorAll(".gross-weight").forEach(function (el) {
 
+        const id = parseInt(el.dataset.productId);
+
+        const product = allProducts.find(function (p) {
+          return p.id === id;
+        });
+
+        if (product && product.gross_weight) {
+          el.textContent = "Gross Weight: " + product.gross_weight + " g";
+        }
+
+      });
+
+    })
+    .catch(function (err) {
+      console.error("JSON Load Error:", err);
     });
 
-  })
-  .catch(function (err) {
-    console.error("JSON Load Error:", err);
-  });
 
+  // ======================================================
+  // FULL SCREEN MOBILE MENU
+  // ======================================================
 
-// ======================================================
-// FULL SCREEN MOBILE MENU
-// ======================================================
+  const menuToggle = document.getElementById("menuToggle");
+  const navbarMenu = document.getElementById("navbarMenu");
+  const menuClose = document.getElementById("menuClose");
 
-const menuToggle = document.getElementById("menuToggle");
-const navbarMenu = document.getElementById("navbarMenu");
-const menuClose = document.getElementById("menuClose");
+  if (menuToggle && navbarMenu && menuClose) {
 
-menuToggle.addEventListener("click", function () {
-  navbarMenu.classList.add("active");
-  menuToggle.style.display = "none";
-});
-
-menuClose.addEventListener("click", function () {
-  navbarMenu.classList.remove("active");
-  menuToggle.style.display = "block";
-});
-
-
-// ======================================================
-// DROPDOWN TOGGLE (MOBILE MENU)
-// ======================================================
-
-const dropdowns = document.querySelectorAll(".dropdown");
-
-dropdowns.forEach(function (dropdown) {
-
-  const header = dropdown.querySelector(".dropdown-header");
-  const arrow = dropdown.querySelector(".mobile-arrow");
-  const link = dropdown.querySelector("a");
-
-  // CLICK ON ARROW → OPEN DROPDOWN
-  arrow.addEventListener("click", function (e) {
-
-    e.stopPropagation();
-    e.preventDefault();
-
-    dropdowns.forEach(function (item) {
-      if (item !== dropdown) {
-        item.classList.remove("active");
-      }
+    menuToggle.addEventListener("click", function () {
+      navbarMenu.classList.add("active");
+      menuToggle.style.display = "none";
     });
 
-    dropdown.classList.toggle("active");
-  });
+    menuClose.addEventListener("click", function () {
+      navbarMenu.classList.remove("active");
+      menuToggle.style.display = "block";
+    });
 
-  // CLICK ON TEXT → OPEN PAGE
-  link.addEventListener("click", function () {
-    window.location.href = link.href;
+  }
+
+
+  // ======================================================
+  // DROPDOWN TOGGLE (MOBILE MENU)
+  // ======================================================
+
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  dropdowns.forEach(function (dropdown) {
+
+    const header = dropdown.querySelector(".dropdown-header");
+    const arrow = dropdown.querySelector(".mobile-arrow");
+    const link = dropdown.querySelector("a");
+
+    if (arrow) {
+
+      arrow.addEventListener("click", function (e) {
+
+        e.stopPropagation();
+        e.preventDefault();
+
+        dropdowns.forEach(function (item) {
+          if (item !== dropdown) {
+            item.classList.remove("active");
+          }
+        });
+
+        dropdown.classList.toggle("active");
+
+      });
+
+    }
+
+    if (link) {
+
+      link.addEventListener("click", function () {
+        window.location.href = link.href;
+      });
+
+    }
+
   });
 
 });
