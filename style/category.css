@@ -264,7 +264,7 @@ body {
         height: 100vh;
         background: #fff;
         z-index: 2000;
-        padding: 60px 20px 20px;
+        padding: 100px 20px 20px;
         /* Top padding for close button */
         overflow-y: auto;
         transition: 0.3s ease;
@@ -279,13 +279,14 @@ body {
     /* Close Button Top Right */
     .filter-close {
         position: absolute;
-        top: 15px;
+        top: 90px;
         right: 15px;
         background: none;
         border: none;
-        font-size: 30px;
+        font-size: 28px;
         cursor: pointer;
         display: block;
+        z-index: 2100;
     }
 
     .filter-group label {

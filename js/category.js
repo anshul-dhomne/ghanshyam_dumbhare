@@ -84,7 +84,7 @@ function renderProducts(products) {
   products.forEach(p => {
 
     const box = document.createElement("div");
-    box.className = "category";   // SAME design class as index page
+    box.className = "category";
 
     box.innerHTML = `
       <a href="product-details.html?id=${p.id}" class="category-link">
@@ -105,7 +105,6 @@ function applyFiltersAndSort() {
 
   let filtered = [...allLoadedProducts];
 
-  // Gender filter
   const genders = [...document.querySelectorAll(".filter-gender:checked")]
     .map(i => i.value);
 
@@ -115,7 +114,6 @@ function applyFiltersAndSort() {
     );
   }
 
-  // Purity filter
   const purities = [...document.querySelectorAll(".filter-purity:checked")]
     .map(i => i.value);
 
@@ -125,7 +123,6 @@ function applyFiltersAndSort() {
     );
   }
 
-  // Weight filter
   const weightRanges = [...document.querySelectorAll(".filter-price:checked")]
     .map(i => i.value);
 
@@ -140,7 +137,6 @@ function applyFiltersAndSort() {
     });
   }
 
-  // Sorting by weight
   if (sortSelect.value === "Weight: Low to High") {
     filtered.sort((a, b) =>
       (a.gross_weight || a.net_weight) -
@@ -182,3 +178,17 @@ if (filterClose) {
     filters.classList.remove("active");
   });
 }
+
+// ================= OUTSIDE CLICK CLOSE FILTER =================
+
+document.addEventListener("click", function (e) {
+
+  if (
+    filters.classList.contains("active") &&
+    !filters.contains(e.target) &&
+    !filterOpen.contains(e.target)
+  ) {
+    filters.classList.remove("active");
+  }
+
+});
