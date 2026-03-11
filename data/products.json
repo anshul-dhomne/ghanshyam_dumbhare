@@ -2428,21 +2428,83 @@
         ]
       },
       {
-        "id": 30102,
+        "id": 2021,
         "product_code": "GDJ-D-LER-0001",
         "name": "Diamond Ladies Earrings ",
-        "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
+        "product_desc": "A beautiful diamond ladies earring perfect for any occasion.",
         "metal": "diamond",
         "category": "ladies-earring",
         "purity": "18K",
-        "net_weight": 4.20,
-        "gross_weight": 4.45,
-        "diamond_weight": 0.42,
+        "net_weight": 4.43,
+        "gross_weight": 4.43,
+        "diamond_weight": 0.61,
         "making_charge": 3000,
         "image": [
-          "assets/images/Product.png",
-          "assets/images/Product.png",
-          "assets/images/Product.png"
+          "assets/images/Diamond/earring/1.jpeg"
+        ]
+      },
+       {
+        "id": 2022,
+        "product_code": "GDJ-D-LER-0002",
+        "name": "Diamond Ladies Earrings ",
+        "product_desc": "A beautiful diamond ladies earring perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-earring",
+        "purity": "18K",
+        "net_weight": 3.00,
+        "gross_weight": 3.00,
+        "diamond_weight": 0.34,
+        "making_charge": 3000,
+        "image": [
+          "assets/images/Diamond/earring/2.jpeg"
+        ]
+      },
+       {
+        "id": 2023,
+        "product_code": "GDJ-D-LER-0003",
+        "name": "Diamond Ladies Earrings ",
+        "product_desc": "A beautiful diamond ladies earring perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-earring",
+        "purity": "18K",
+        "net_weight": 2.40,
+        "gross_weight": 2.40,
+        "diamond_weight": 0.50,
+        "making_charge": 3000,
+        "image": [
+          "assets/images/Diamond/earring/3.jpeg"
+        ]
+      },
+       {
+        "id": 2024,
+        "product_code": "GDJ-D-LER-0004",
+        "name": "Diamond Ladies Earrings ",
+        "product_desc": "A beautiful diamond ladies earring perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-earring",
+        "purity": "18K",
+        "net_weight": 3.36,
+        "gross_weight": 3.36,
+        "diamond_weight": 0.41,
+        "making_charge": 3000,
+        "image": [
+          "assets/images/Diamond/earring/4.jpeg"
+        ]
+      },
+       {
+        "id": 2025,
+        "product_code": "GDJ-D-LER-0005",
+        "name": "Diamond Ladies Earrings ",
+        "product_desc": "A beautiful diamond ladies earring perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-earring",
+        "purity": "18K",
+        "net_weight": 3.82,
+        "gross_weight": 3.82,
+        "diamond_weight": 0.44,
+        "making_charge": 3000,
+        "image": [
+          "assets/images/Diamond/earring/5.jpeg"
         ]
       },
       {
@@ -2574,21 +2636,83 @@
         ]
       },
       {
-        "id": 30106,
+        "id": 2081,
         "product_code": "GDJ-D-LNP-0001",
         "name": "Diamond Nose Pin ",
-        "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
+        "product_desc": "A beautiful diamond ladies nose-pin perfect for any occasion.",
         "metal": "diamond",
         "category": "ladies-nose-pin",
         "purity": "18K",
-        "net_weight": 4.20,
-        "gross_weight": 4.45,
-        "diamond_weight": 0.12,
+        "net_weight": 0.48,
+        "gross_weight": 0.48,
+        "diamond_weight": 0.09,
         "making_charge": 1800,
         "image": [
-          "assets/images/Product.png",
-          "assets/images/Product.png",
-          "assets/images/Product.png"
+          "assets/images/Diamond/nois-pin/1.jpeg"
+        ]
+      },
+      {
+        "id": 2082,
+        "product_code": "GDJ-D-LNP-0002",
+        "name": "Diamond Nose Pin ",
+        "product_desc": "A beautiful diamond ladies nose-pin perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-nose-pin",
+        "purity": "18K",
+        "net_weight": 0.45,
+        "gross_weight": 4.45,
+        "diamond_weight": 0.24,
+        "making_charge": 1800,
+        "image": [
+          "assets/images/Diamond/nois-pin/2.jpeg"
+        ]
+      },
+      {
+        "id": 2083,
+        "product_code": "GDJ-D-LNP-0003",
+        "name": "Diamond Nose Pin ",
+        "product_desc": "A beautiful diamond ladies nose-pin perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-nose-pin",
+        "purity": "18K",
+        "net_weight": 0.39,
+        "gross_weight": 4.39,
+        "diamond_weight": 0.06,
+        "making_charge": 1800,
+        "image": [
+          "assets/images/Diamond/nois-pin/3.jpeg"
+        ]
+      },
+      {
+        "id": 2084,
+        "product_code": "GDJ-D-LNP-0004",
+        "name": "Diamond Nose Pin ",
+        "product_desc": "A beautiful diamond ladies nose-pin perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-nose-pin",
+        "purity": "18K",
+        "net_weight": 0.26,
+        "gross_weight": 0.26,
+        "diamond_weight": 0.05,
+        "making_charge": 1800,
+        "image": [
+          "assets/images/Diamond/nois-pin/4.jpeg"
+        ]
+      },
+      {
+        "id": 2085,
+        "product_code": "GDJ-D-LNP-0005",
+        "name": "Diamond Nose Pin ",
+        "product_desc": "A beautiful diamond ladies nose-pin perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-nose-pin",
+        "purity": "18K",
+        "net_weight": 0.39,
+        "gross_weight": 0.39,
+        "diamond_weight": 0.06,
+        "making_charge": 1800,
+        "image": [
+          "assets/images/Diamond/nois-pin/5.jpeg"
         ]
       }
     ],
