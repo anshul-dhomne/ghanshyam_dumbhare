@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const netWeightEl = document.getElementById("netWeight");
   const grossWeightEl = document.getElementById("grossWeight");
 
+  // ✅ NEW WEIGHT ELEMENTS
+  const diamondWeightEl = document.getElementById("diamondWeight");
+  const diamondWeightRow = document.getElementById("diamondWeightRow");
+  const netWeightRow = document.getElementById("netWeightRow");
+
   const purityValue = document.getElementById("purityValue");
   const whatsappLink = document.getElementById("whatsappLink");
 
@@ -102,17 +107,39 @@ document.addEventListener("DOMContentLoaded", function () {
       if (desktopProductTitle)
         desktopProductTitle.innerText = product.name;
 
-      if (netWeightEl)
+      // ---------- WEIGHT LOGIC ----------
+      if (product.metal === "diamond") {
+
+        if (netWeightRow)
+          netWeightRow.style.display = "none";
+
+        if (diamondWeightRow)
+          diamondWeightRow.style.display = "flex";
+
+        if (diamondWeightEl && product.diamond_weight)
+          diamondWeightEl.innerText = product.diamond_weight.toFixed(2);
+
+      } else {
+
+        if (netWeightRow)
+          netWeightRow.style.display = "flex";
+
+        if (diamondWeightRow)
+          diamondWeightRow.style.display = "none";
+
+      }
+
+      if (netWeightEl && product.net_weight)
         netWeightEl.innerText = product.net_weight.toFixed(2);
 
-      if (grossWeightEl)
+      if (grossWeightEl && product.gross_weight)
         grossWeightEl.innerText = product.gross_weight.toFixed(2);
 
       // ---------- PURITY ----------
       if (purityValue)
         purityValue.innerText = product.purity;
 
-      // ---------- ✅ PRODUCT CODE & DESCRIPTION ----------
+      // ---------- PRODUCT CODE & DESCRIPTION ----------
       if (productCodeEl)
         productCodeEl.innerText = product.product_code;
 
