@@ -1,23 +1,27 @@
 // ================= FORM → WHATSAPP =================
-document.getElementById("enquiryForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+const enquiryForm = document.getElementById("enquiryForm");
 
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
-  const email = document.getElementById("email").value;
-  const type = document.getElementById("type").value;
-  const message = document.getElementById("message").value;
+if (enquiryForm) {
+  enquiryForm.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  const whatsappMessage =
-    `Hello Ghanshyam Dumbhare Jewellers,%0A%0A` +
-    `Name: ${name}%0A` +
-    `Phone: ${phone}%0A` +
-    `Email: ${email}%0A` +
-    `Enquiry: ${type}%0A` +
-    `Message: ${message}`;
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
+    const type = document.getElementById("type").value;
+    const message = document.getElementById("message").value;
 
-  window.open(`https://wa.me/917057832844?text=${whatsappMessage}`, "_blank");
-});
+    const whatsappMessage =
+      `Hello Ghanshyam Dumbhare Jewellers,%0A%0A` +
+      `Name: ${name}%0A` +
+      `Phone: ${phone}%0A` +
+      `Email: ${email}%0A` +
+      `Enquiry: ${type}%0A` +
+      `Message: ${message}`;
+
+    window.open(`https://wa.me/917057832844?text=${whatsappMessage}`, "_blank");
+  });
+}
 
 
 // ================= FAQ ACCORDION =================
