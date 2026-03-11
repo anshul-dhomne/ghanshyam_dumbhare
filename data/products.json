@@ -623,7 +623,7 @@
         "gross_weight": 30.00,
         "making_percent": 10,
         "image": [
-          "assets/images/Gold/neckless/1.jpg"
+          "assets/images/Gold/necklace/1.jpg"
         ]
       },
       {
@@ -638,7 +638,7 @@
         "gross_weight": 35.50,
         "making_percent": 10,
         "image": [
-          "assets/images/Gold/neckless/2.jpg"
+          "assets/images/Gold/necklace/2.jpg"
         ]
       },
       {
@@ -653,7 +653,7 @@
         "gross_weight": 30.00,
         "making_percent": 10,
         "image": [
-          "assets/images/Gold/neckless/3.jpg"
+          "assets/images/Gold/necklace/3.jpg"
         ]
       },
       {
@@ -668,7 +668,7 @@
         "gross_weight": 30.00,
         "making_percent": 10,
         "image": [
-          "assets/images/Gold/neckless/4.jpg"
+          "assets/images/Gold/necklace/4.jpg"
         ]
       },
       {
@@ -683,7 +683,7 @@
         "gross_weight": 40.50,
         "making_percent": 10,
         "image": [
-          "assets/images/Gold/neckless/5.jpg"
+          "assets/images/Gold/necklace/5.jpg"
         ]
       },
       {
@@ -1633,7 +1633,7 @@
           8
         ],
         "image": [
-          "assets/images/Silver/lasies-ring/1.jpeg"
+          "assets/images/Silver/ladies-ring/1.jpeg"
         ]
       },
       {
@@ -1653,7 +1653,7 @@
           8
         ],
         "image": [
-          "assets/images/Silver/lasies-ring/2.jpeg"
+          "assets/images/Silver/ladies-ring/2.jpeg"
         ]
       },
       {
@@ -1673,7 +1673,7 @@
           8
         ],
         "image": [
-          "assets/images/Silver/lasies-ring/3.jpeg"
+          "assets/images/Silver/ladies-ring/3.jpeg"
         ]
       },
       {
@@ -1693,7 +1693,7 @@
           8
         ],
         "image": [
-          "assets/images/Silver/lasies-ring/4.jpeg"
+          "assets/images/Silver/ladies-ring/4.jpeg"
         ]
       },
       {
@@ -1713,41 +1713,157 @@
           8
         ],
         "image": [
-          "assets/images/Silver/lasies-ring/5.jpeg"
+          "assets/images/Silver/ladies-ring/5.jpeg"
         ]
       },
       {
-        "id": 20110,
+        "id": 1171,
         "product_code": "GDJ-S-LC-0001",
         "name": "925 Silver Ladies Chain",
-        "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
+        "product_desc": "A beautiful silver ladies chain perfect for any occasion.",
         "metal": "silver",
         "category": "ladies-chain",
         "purity": "925",
-        "net_weight": 4.20,
-        "gross_weight": 4.45,
+        "net_weight": 11.73,
+        "gross_weight": 11.73,
         "making_charge": 420,
         "image": [
-          "assets/images/Product.png",
-          "assets/images/Product.png",
-          "assets/images/Product.png"
+          "assets/images/Silver/ladies-chain/1.jpeg"
         ]
       },
       {
-        "id": 20105,
+        "id": 1172,
+        "product_code": "GDJ-S-LC-0002",
+        "name": "925 Silver Ladies Chain",
+        "product_desc": "A beautiful silver ladies chain perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-chain",
+        "purity": "925",
+        "net_weight": 8.74,
+        "gross_weight": 8.74,
+        "making_charge": 420,
+        "image": [
+          "assets/images/Silver/ladies-chain/2.jpeg"
+        ]
+      },
+      {
+        "id": 1173,
+        "product_code": "GDJ-S-LC-0003",
+        "name": "925 Silver Ladies Chain",
+        "product_desc": "A beautiful silver ladies chain perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-chain",
+        "purity": "925",
+        "net_weight": 11.10,
+        "gross_weight": 11.10,
+        "making_charge": 420,
+        "image": [
+          "assets/images/Silver/ladies-chain/3.jpeg"
+        ]
+      },
+      {
+        "id": 1174,
+        "product_code": "GDJ-S-LC-0004",
+        "name": "925 Silver Ladies Chain",
+        "product_desc": "A beautiful silver ladies chain perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-chain",
+        "purity": "925",
+        "net_weight": 12.58,
+        "gross_weight": 12.58,
+        "making_charge": 420,
+        "image": [
+          "assets/images/Silver/ladies-chain/4.jpeg"
+        ]
+      },
+      {
+        "id": 1175,
+        "product_code": "GDJ-S-LC-0005",
+        "name": "925 Silver Ladies Chain",
+        "product_desc": "A beautiful silver ladies chain perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-chain",
+        "purity": "925",
+        "net_weight": 15.26,
+        "gross_weight": 15.26,
+        "making_charge": 420,
+        "image": [
+          "assets/images/Silver/ladies-chain/5.jpeg"
+        ]
+      },
+      {
+        "id": 1191,
         "product_code": "GDJ-S-LBR-0001",
         "name": "925 Silver Ladies Bracelet",
-        "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
+        "product_desc": "A beautiful silver ladies bracelet perfect for any occasion.",
         "metal": "silver",
         "category": "ladies-bracelet",
         "purity": "925",
-        "net_weight": 4.20,
-        "gross_weight": 4.45,
+        "net_weight": 4.21,
+        "gross_weight": 4.21,
         "making_charge": 450,
         "image": [
-          "assets/images/Product.png",
-          "assets/images/Product.png",
-          "assets/images/Product.png"
+          "assets/images/Silver/ladies-braclet/1.jpeg"
+        ]
+      },
+      {
+        "id": 1192,
+        "product_code": "GDJ-S-LBR-0002",
+        "name": "925 Silver Ladies Bracelet",
+        "product_desc": "A beautiful silver ladies bracelet perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-bracelet",
+        "purity": "925",
+        "net_weight": 6.59,
+        "gross_weight": 6.59,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/ladies-braclet/2.jpeg"
+        ]
+      },
+      {
+        "id": 1193,
+        "product_code": "GDJ-S-LBR-0003",
+        "name": "925 Silver Ladies Bracelet",
+        "product_desc": "A beautiful silver ladies bracelet perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-bracelet",
+        "purity": "925",
+        "net_weight": 10.38,
+        "gross_weight": 10.38,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/ladies-braclet/3.jpeg"
+        ]
+      },
+      {
+        "id": 1194,
+        "product_code": "GDJ-S-LBR-0004",
+        "name": "925 Silver Ladies Bracelet",
+        "product_desc": "A beautiful silver ladies bracelet perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-bracelet",
+        "purity": "925",
+        "net_weight": 9.69,
+        "gross_weight": 9.69,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/ladies-braclet/4.jpeg"
+        ]
+      },
+      {
+        "id": 1195,
+        "product_code": "GDJ-S-LBR-0005",
+        "name": "925 Silver Ladies Bracelet",
+        "product_desc": "A beautiful silver ladies bracelet perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-bracelet",
+        "purity": "925",
+        "net_weight": 5.56,
+        "gross_weight": 5.56,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/ladies-braclet/5.jpeg"
         ]
       },
       {
@@ -1953,20 +2069,78 @@
         ]
       },
       {
-        "id": 20106,
+        "id": 1521,
         "product_code": "GDJ-S-GC-0001",
         "name": "925 Silver Gents Chain",
-        "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
+        "product_desc": "A beautiful silver gents chain perfect for any occasion.",
         "metal": "silver",
         "category": "gents-chain",
         "purity": "925",
-        "net_weight": 4.20,
-        "gross_weight": 4.45,
+        "net_weight": 15.69,
+        "gross_weight": 15.69,
         "making_charge": 450,
         "image": [
-          "assets/images/Product.png",
-          "assets/images/Product.png",
-          "assets/images/Product.png"
+          "assets/images/Silver/gents-chain/1.jpeg"
+        ]
+      },
+      {
+        "id": 1522,
+        "product_code": "GDJ-S-GC-0002",
+        "name": "925 Silver Gents Chain",
+        "product_desc": "A beautiful silver gents chain perfect for any occasion.",
+        "metal": "silver",
+        "category": "gents-chain",
+        "purity": "925",
+        "net_weight": 49.97,
+        "gross_weight": 49.97,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/gents-chain/2.jpeg"
+        ]
+      },
+      {
+        "id": 1523,
+        "product_code": "GDJ-S-GC-0003",
+        "name": "925 Silver Gents Chain",
+        "product_desc": "A beautiful silver gents chain perfect for any occasion.",
+        "metal": "silver",
+        "category": "gents-chain",
+        "purity": "925",
+        "net_weight": 27.20,
+        "gross_weight": 27.20,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/gents-chain/3.jpeg"
+        ]
+      },
+      {
+        "id": 1524,
+        "product_code": "GDJ-S-GC-0004",
+        "name": "925 Silver Gents Chain",
+        "product_desc": "A beautiful silver gents chain perfect for any occasion.",
+        "metal": "silver",
+        "category": "gents-chain",
+        "purity": "925",
+        "net_weight": 27.26,
+        "gross_weight": 27.26,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/gents-chain/4.jpeg"
+        ]
+      },
+      {
+        "id": 1525,
+        "product_code": "GDJ-S-GC-0005",
+        "name": "925 Silver Gents Chain",
+        "product_desc": "A beautiful silver gents chain perfect for any occasion.",
+        "metal": "silver",
+        "category": "gents-chain",
+        "purity": "925",
+        "net_weight": 32.18,
+        "gross_weight": 32.18,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/gents-chain/5.jpeg"
         ]
       },
       {
@@ -2149,15 +2323,57 @@
   "diamond": {
     "ladies": [
       {
-        "id": 30101,
+        "id": 2001,
         "product_code": "GDJ-D-LR-0001",
         "name": "Diamond Ladies Ring ",
-        "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
+        "product_desc": "A beautiful diamond ladies ring perfect for any occasion.",
         "metal": "diamond",
         "category": "ladies-ring",
         "purity": "18K",
-        "net_weight": 4.20,
-        "gross_weight": 4.45,
+        "net_weight": 2.97,
+        "gross_weight": 2.97,
+        "diamond_weight": 0.38,
+        "making_charge": 3200,
+        "size": [
+          6,
+          7,
+          8
+        ],
+        "image": [
+          "assets/images/Diamond/ladies-ring/1.jpeg"
+        ]
+      },
+      {
+        "id": 2002,
+        "product_code": "GDJ-D-LR-0002",
+        "name": "Diamond Ladies Ring ",
+        "product_desc": "A beautiful diamond ladies ring perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-ring",
+        "purity": "18K",
+        "net_weight": 1.77,
+        "gross_weight": 1.77,
+        "diamond_weight": 0.16,
+        "making_charge": 3200,
+        "size": [
+          6,
+          7,
+          8
+        ],
+        "image": [
+          "assets/images/Diamond/ladies-ring/2.jpeg"
+        ]
+      },
+      {
+        "id": 2003,
+        "product_code": "GDJ-D-LR-0003",
+        "name": "Diamond Ladies Ring ",
+        "product_desc": "A beautiful diamond ladies ring perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-ring",
+        "purity": "18K",
+        "net_weight": 2.83,
+        "gross_weight": 2.83,
         "diamond_weight": 0.35,
         "making_charge": 3200,
         "size": [
@@ -2166,9 +2382,49 @@
           8
         ],
         "image": [
-          "assets/images/Product.png",
-          "assets/images/Product.png",
-          "assets/images/Product.png"
+          "assets/images/Diamond/ladies-ring/3.jpeg"
+        ]
+      },
+      {
+        "id": 2004,
+        "product_code": "GDJ-D-LR-0004",
+        "name": "Diamond Ladies Ring ",
+        "product_desc": "A beautiful diamond ladies ring perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-ring",
+        "purity": "18K",
+        "net_weight": 2.61,
+        "gross_weight": 2.61,
+        "diamond_weight": 0.21,
+        "making_charge": 3200,
+        "size": [
+          6,
+          7,
+          8
+        ],
+        "image": [
+          "assets/images/Diamond/ladies-ring/4.jpeg"
+        ]
+      },
+      {
+        "id": 2005,
+        "product_code": "GDJ-D-LR-0005",
+        "name": "Diamond Ladies Ring ",
+        "product_desc": "A beautiful diamond ladies ring perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-ring",
+        "purity": "18K",
+        "net_weight": 1.25,
+        "gross_weight": 1.25,
+        "diamond_weight": 0.11,
+        "making_charge": 3200,
+        "size": [
+          6,
+          7,
+          8
+        ],
+        "image": [
+          "assets/images/Diamond/ladies-ring/5.jpeg"
         ]
       },
       {
@@ -2190,57 +2446,131 @@
         ]
       },
       {
-        "id": 30103,
+        "id": 2021,
         "product_code": "GDJ-D-LPD-0001",
         "name": "Diamond Ladies Pendant ",
-        "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
+        "product_desc": "A beautiful diamond ladies pendant perfect for any occasion.",
         "metal": "diamond",
         "category": "ladies-pendant",
         "purity": "18K",
-        "net_weight": 4.20,
-        "gross_weight": 4.45,
-        "diamond_weight": 0.28,
+        "net_weight": 3.09,
+        "gross_weight": 3.09,
+        "diamond_weight": 0.94,
         "making_charge": 2800,
         "image": [
-          "assets/images/Product.png",
-          "assets/images/Product.png",
-          "assets/images/Product.png"
+          "assets/images/Diamond/pendant/1.jpeg"
+        ]
+      },
+       {
+        "id": 2022,
+        "product_code": "GDJ-D-LPD-0002",
+        "name": "Diamond Ladies Pendant ",
+        "product_desc": "A beautiful diamond ladies pendant perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-pendant",
+        "purity": "18K",
+        "net_weight": 3.47,
+        "gross_weight": 3.47,
+        "diamond_weight": 0.70,
+        "making_charge": 2800,
+        "image": [
+          "assets/images/Diamond/pendant/2.jpeg"
+        ]
+      },
+       {
+        "id": 2023,
+        "product_code": "GDJ-D-LPD-0003",
+        "name": "Diamond Ladies Pendant ",
+        "product_desc": "A beautiful diamond ladies pendant perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-pendant",
+        "purity": "18K",
+        "net_weight": 2.97,
+        "gross_weight": 2.97,
+        "diamond_weight": 0.44,
+        "making_charge": 2800,
+        "image": [
+          "assets/images/Diamond/pendant/3.jpeg"
+        ]
+      },
+       {
+        "id": 2024,
+        "product_code": "GDJ-D-LPD-0004",
+        "name": "Diamond Ladies Pendant ",
+        "product_desc": "A beautiful diamond ladies pendant perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-pendant",
+        "purity": "18K",
+        "net_weight": 3.10,
+        "gross_weight": 3.10,
+        "diamond_weight": 0.32,
+        "making_charge": 2800,
+        "image": [
+          "assets/images/Diamond/pendant/4.jpeg"
+        ]
+      },
+       {
+        "id": 2025,
+        "product_code": "GDJ-D-LPD-0005",
+        "name": "Diamond Ladies Pendant ",
+        "product_desc": "A beautiful diamond ladies pendant perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-pendant",
+        "purity": "18K",
+        "net_weight": 1.24,
+        "gross_weight": 1.24,
+        "diamond_weight": 0.22,
+        "making_charge": 2800,
+        "image": [
+          "assets/images/Diamond/pendant/5.jpeg"
         ]
       },
       {
-        "id": 30104,
+        "id": 2061,
         "product_code": "GDJ-D-LMS-0001",
         "name": "Diamond Mangalsutra ",
-        "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
+        "product_desc": "A beautiful diamond ladies mangalsutra perfect for any occasion.",
         "metal": "diamond",
         "category": "ladies-mangalsutra",
         "purity": "18K",
-        "net_weight": 4.20,
-        "gross_weight": 4.45,
-        "diamond_weight": 0.55,
+        "net_weight": 3.52,
+        "gross_weight": 3.52,
+        "diamond_weight": 0.05,
         "making_charge": 4500,
         "image": [
-          "assets/images/Product.png",
-          "assets/images/Product.png",
-          "assets/images/Product.png"
+          "assets/images/Diamond/minipoth/1.jpeg"
         ]
       },
       {
-        "id": 30105,
-        "product_code": "GDJ-D-LBR-0001",
-        "name": "Diamond Ladies Bracelet ",
-        "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
+        "id": 2062,
+        "product_code": "GDJ-D-LMS-0002",
+        "name": "Diamond Mangalsutra ",
+        "product_desc": "A beautiful diamond ladies mangalsutra perfect for any occasion.",
         "metal": "diamond",
-        "category": "ladies-bracelet",
+        "category": "ladies-mangalsutra",
         "purity": "18K",
-        "net_weight": 4.20,
-        "gross_weight": 4.45,
-        "diamond_weight": 0.60,
-        "making_charge": 5200,
+        "net_weight": 3.06,
+        "gross_weight": 3.06,
+        "diamond_weight": 1.11,
+        "making_charge": 4500,
         "image": [
-          "assets/images/Product.png",
-          "assets/images/Product.png",
-          "assets/images/Product.png"
+          "assets/images/Diamond/minipoth/2.jpeg"
+        ]
+      },
+      {
+        "id": 2063,
+        "product_code": "GDJ-D-LMS-0003",
+        "name": "Diamond Mangalsutra ",
+        "product_desc": "A beautiful diamond ladies mangalsutra perfect for any occasion.",
+        "metal": "diamond",
+        "category": "ladies-mangalsutra",
+        "purity": "18K",
+        "net_weight": 1.92,
+        "gross_weight": 1.92,
+        "diamond_weight": 0.56,
+        "making_charge": 4500,
+        "image": [
+          "assets/images/Diamond/minipoth/3.jpeg"
         ]
       },
       {
@@ -2264,10 +2594,10 @@
     ],
     "gents": [
       {
-        "id": 30201,
+        "id": 2501,
         "product_code": "GDJ-D-GR-0001",
         "name": "Diamond Gents Ring ",
-        "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
+        "product_desc": "A beautiful diamond gents ring perfect for any occasion.",
         "metal": "diamond",
         "category": "gents-ring",
         "purity": "18K",
@@ -2281,45 +2611,91 @@
           8
         ],
         "image": [
-          "assets/images/Product.png",
-          "assets/images/Product.png",
-          "assets/images/Product.png"
+          "assets/images/Diamond/gents-ring/1.jpeg"
         ]
       },
-      {
-        "id": 30202,
-        "product_code": "GDJ-D-GC-0001",
-        "name": "Diamond Gents Chain ",
-        "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
+        {
+        "id": 2052,
+        "product_code": "GDJ-D-GR-0002",
+        "name": "Diamond Gents Ring ",
+        "product_desc": "A beautiful diamond gents ring perfect for any occasion.",
         "metal": "diamond",
-        "category": "gents-chain",
+        "category": "gents-ring",
         "purity": "18K",
         "net_weight": 4.20,
         "gross_weight": 4.45,
-        "diamond_weight": 0.22,
-        "making_charge": 2600,
+        "diamond_weight": 0.45,
+        "making_charge": 4200,
+        "size": [
+          6,
+          7,
+          8
+        ],
         "image": [
-          "assets/images/Product.png",
-          "assets/images/Product.png",
-          "assets/images/Product.png"
+          "assets/images/Diamond/gents-ring/2.jpeg"
         ]
       },
-      {
-        "id": 30203,
-        "product_code": "GDJ-D-GB-0001",
-        "name": "Diamond Gents Bracelet ",
-        "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
+        {
+        "id": 2053,
+        "product_code": "GDJ-D-GR-0003",
+        "name": "Diamond Gents Ring ",
+        "product_desc": "A beautiful diamond gents ring perfect for any occasion.",
         "metal": "diamond",
-        "category": "gents-bracelet",
+        "category": "gents-ring",
         "purity": "18K",
         "net_weight": 4.20,
         "gross_weight": 4.45,
-        "diamond_weight": 0.70,
-        "making_charge": 6500,
+        "diamond_weight": 0.45,
+        "making_charge": 4200,
+        "size": [
+          6,
+          7,
+          8
+        ],
         "image": [
-          "assets/images/Product.png",
-          "assets/images/Product.png",
-          "assets/images/Product.png"
+          "assets/images/Diamond/gents-ring/3.jpeg"
+        ]
+      },
+        {
+        "id": 2054,
+        "product_code": "GDJ-D-GR-0004",
+        "name": "Diamond Gents Ring ",
+        "product_desc": "A beautiful diamond gents ring perfect for any occasion.",
+        "metal": "diamond",
+        "category": "gents-ring",
+        "purity": "18K",
+        "net_weight": 4.20,
+        "gross_weight": 4.45,
+        "diamond_weight": 0.45,
+        "making_charge": 4200,
+        "size": [
+          6,
+          7,
+          8
+        ],
+        "image": [
+          "assets/images/Diamond/gents-ring/4.jpeg"
+        ]
+      },
+        {
+        "id": 2055,
+        "product_code": "GDJ-D-GR-0005",
+        "name": "Diamond Gents Ring ",
+        "product_desc": "A beautiful diamond gents ring perfect for any occasion.",
+        "metal": "diamond",
+        "category": "gents-ring",
+        "purity": "18K",
+        "net_weight": 4.20,
+        "gross_weight": 4.45,
+        "diamond_weight": 0.45,
+        "making_charge": 4200,
+        "size": [
+          6,
+          7,
+          8
+        ],
+        "image": [
+          "assets/images/Diamond/gents-ring/5.jpeg"
         ]
       }
     ]
