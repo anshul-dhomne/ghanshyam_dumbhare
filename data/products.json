@@ -1600,20 +1600,228 @@
         ]
       },
       {
-        "id": 20102,
+        "id": 1101,
         "product_code": "GDJ-S-LT-0001",
         "name": "925 Silver Toering",
-        "product_desc": "A beautiful gold ladies ring perfect for any occasion.",
+        "product_desc": "A beautiful silver fancy toring perfect for any occasion.",
         "metal": "silver",
         "category": "ladies-toering",
         "purity": "925",
-        "net_weight": 4.20,
-        "gross_weight": 4.45,
+        "net_weight": 13.54,
+        "gross_weight": 13.54,
         "making_charge": 450,
         "image": [
-          "assets/images/Product.png",
-          "assets/images/Product.png",
-          "assets/images/Product.png"
+          "assets/images/Silver/fancy-toring/1.jpeg"
+        ]
+      },
+         {
+        "id": 1102,
+        "product_code": "GDJ-S-LT-0002",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver fancy toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 17.78,
+        "gross_weight": 17.78,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/fancy-toring/2.jpeg"
+        ]
+      },
+         {
+        "id": 1103,
+        "product_code": "GDJ-S-LT-0003",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver fancy toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 18.36,
+        "gross_weight": 18.36,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/fancy-toring/3.jpeg"
+        ]
+      },
+         {
+        "id": 1104,
+        "product_code": "GDJ-S-LT-0004",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver fancy toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 17.86,
+        "gross_weight": 17.86,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/fancy-toring/4.jpeg"
+        ]
+      },
+         {
+        "id": 1105,
+        "product_code": "GDJ-S-LT-0005",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver fancy toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 10.09,
+        "gross_weight": 10.09,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/fancy-toring/5.jpeg"
+        ]
+      },
+         {
+        "id": 1106,
+        "product_code": "GDJ-S-LT-0006",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver fancy toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 12.65,
+        "gross_weight": 12.65,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/fancy-toring/6.jpeg"
+        ]
+      },
+         {
+        "id": 1107,
+        "product_code": "GDJ-S-LT-0007",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver fancy toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 4.63,
+        "gross_weight": 4.63,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/fancy-toring/7.jpeg"
+        ]
+      },
+         {
+        "id": 1108,
+        "product_code": "GDJ-S-LT-0008",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver fancy toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 5.50,
+        "gross_weight": 5.50,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/fancy-toring/8.jpeg"
+        ]
+      },
+         {
+        "id": 1109,
+        "product_code": "GDJ-S-LT-0009",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver fancy toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 8.29,
+        "gross_weight": 8.29,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/fancy-toring/9.jpeg"
+        ]
+      },
+         {
+        "id": 1110,
+        "product_code": "GDJ-S-LT-0010",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver fancy toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 5.50,
+        "gross_weight": 5.50,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/fancy-toring/10.jpeg"
+        ]
+      },
+         {
+        "id": 1111,
+        "product_code": "GDJ-S-LT-0011",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver sadhe toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 19.97,
+        "gross_weight": 19.97,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/sadhe-toring/1.jpeg"
+        ]
+      },
+      {
+        "id": 1112,
+        "product_code": "GDJ-S-LT-0012",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver sadhe toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 10.43,
+        "gross_weight": 10.43,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/sadhe-toring/2.jpeg"
+        ]
+      },
+      {
+        "id": 1113,
+        "product_code": "GDJ-S-LT-0013",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver sadhe toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 20.08,
+        "gross_weight": 20.08,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/sadhe-toring/3.jpeg"
+        ]
+      },
+      {
+        "id": 1114,
+        "product_code": "GDJ-S-LT-0014",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver sadhe toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 12.00,
+        "gross_weight": 12.00,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/sadhe-toring/4.jpeg"
+        ]
+      },
+      {
+        "id": 1115,
+        "product_code": "GDJ-S-LT-0015",
+        "name": "925 Silver Toering",
+        "product_desc": "A beautiful silver sadhe toring perfect for any occasion.",
+        "metal": "silver",
+        "category": "ladies-toering",
+        "purity": "925",
+        "net_weight": 8.94,
+        "gross_weight": 9.94,
+        "making_charge": 450,
+        "image": [
+          "assets/images/Silver/sadhe-toring/5.jpeg"
         ]
       },
       {
