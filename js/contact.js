@@ -9,6 +9,7 @@ if (enquiryForm) {
     e.preventDefault();
 
     const name = document.getElementById("name").value;
+    const lastName = document.getElementById("lastname").value;   // ✅ FIX
     const phone = document.getElementById("phone").value;
     const email = document.getElementById("email").value;
     const type = document.getElementById("type").value;
@@ -22,7 +23,7 @@ if (enquiryForm) {
 
       body: JSON.stringify({
         firstName: name,
-        lastName: "",
+        lastName: lastName,   // ✅ FIX
         email: email,
         number: phone,
         type: type,
@@ -35,7 +36,7 @@ if (enquiryForm) {
 
     const whatsappMessage =
       `Hello Ghanshyam Dumbhare Jewellers,%0A%0A` +
-      `Name: ${name}%0A` +
+      `Name: ${name} ${lastName}%0A` +   // ✅ shows full name
       `Phone: ${phone}%0A` +
       `Email: ${email}%0A` +
       `Enquiry: ${type}%0A` +
@@ -48,8 +49,6 @@ if (enquiryForm) {
   });
 
 }
-
-
 
 // ================= FAQ ACCORDION =================
 
