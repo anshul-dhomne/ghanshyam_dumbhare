@@ -55,7 +55,7 @@
     <link rel="stylesheet" href="style/contact.css">
 
     <!-- Local Business Schema -->
-     
+
     <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -287,18 +287,21 @@
 
                 <div class="form-row">
                     <input type="text" id="name" placeholder="First Name*" required>
-                    <input type="text" placeholder="Last Name">
+                    <input type="text" id="lastName" placeholder="Last Name">
                 </div>
 
                 <input type="email" id="email" placeholder="Email*" required>
 
                 <div class="form-row">
-                    <select>
+
+                    <select id="countryCode">
                         <option>+91</option>
                         <option>+1</option>
                         <option>+44</option>
                     </select>
+
                     <input type="tel" id="phone" placeholder="Phone*" required>
+
                 </div>
 
                 <select id="type" required>
@@ -311,7 +314,7 @@
 
                 <textarea id="message" placeholder="Message*" required></textarea>
 
-                <button class="submit-btn">Submit</button>
+                <button type="submit" class="submit-btn">Submit</button>
 
             </form>
         </div>
